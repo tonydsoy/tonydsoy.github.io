@@ -1,0 +1,86 @@
+html {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background: rgb(120, 120, 120);
+    color:rgb(223, 220, 220);
+    margin:0;
+}
+
+.bottom {
+    background-color: rgb(36, 35, 35);
+    height: 20em;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    border-top: 0.1em;
+    border-style: solid;
+    border-color: rgb(156, 155, 155);
+    margin-top: -9em;
+}
+
+.bottomlink {
+    color:rgb(34, 148, 255);
+}
+
+.bmargin {
+    margin: 1em;
+    text-align: center;
+}
+
+.sec1 {
+    color: rgb(223, 220, 220);
+    background-color: rgb(97,97,97);
+    width:100%;
+    height:20em;
+    margin:8px;
+    margin-top: 6em;
+    border-radius: 5cap;
+}
+.welcometext {
+    transform:translate(3em, 4em);
+    max-width: 140px;
+}
+
+.welcomedesc {
+    text-align: center;
+    width:60%;
+    margin-left: 20%;
+    margin-top: -1em;
+}
+
+.sec2part1 {
+    margin:8px;
+    color: rgb(223, 220, 220);
+    background-color: rgb(97,97,97);
+    height:10em;
+    width:49%;
+    transform:translateY(11em);
+    border-radius: 5cap;
+}
+.sec2part2 {
+    color: rgb(223, 220, 220);
+    background-color: rgb(97,97,97);
+    height:10em;
+    width:49%;
+    transform:translate(103%, -0.3em);
+    border-radius: 5cap;
+}
+.sec3part1 {
+    margin:8px;
+    color: rgb(223, 220, 220);
+    background-color: rgb(97,97,97);
+    height:10em;
+    width:49%;
+    border-radius: 5cap;
+}
+.sec3part2 {
+    color: rgb(223, 220, 220);
+    background-color: rgb(97,97,97);
+    height:10em;
+    width:49%;
+    transform:translate(103%, -115%);
+    border-radius: 5cap;
+}
