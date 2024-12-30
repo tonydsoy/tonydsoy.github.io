@@ -9,6 +9,15 @@ body {
     margin:0;
 }
 
+.source {
+    border-radius: 1cap;
+    margin: 8px;
+    float: right;
+    margin-right: 1em;
+    height: 44px;
+}
+
+
 .bottom {
     background-color: rgb(36, 35, 35);
     height: 20em;
@@ -23,6 +32,11 @@ body {
 
 .bottomlink {
     color:rgb(34, 148, 255);
+}
+
+.TOS {
+    margin: 0px;
+    transform: translate(-12%);
 }
 
 .bmargin {
