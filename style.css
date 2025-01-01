@@ -1,8 +1,8 @@
 
-
 html {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -21,18 +21,37 @@ body {
     overflow-x: hidden;
 }
 
-.bottom {
-    background-color: rgb(36, 35, 35);
-    padding-bottom: 1px;
-    width: 100%;
-    margin: 0;
-    border: 0;
-    border-top: 0.1em;
-    border-style: solid;
-    border-color: rgb(156, 155, 155);
-    margin-top: -9em;
-    z-index: 1;
-    overflow-x: hidden;
+@media all and (min-width: 815px) {
+    .bottom {
+        background-color: rgb(36, 35, 35);
+        padding-bottom: 1px;
+        width: 100%;
+        margin: 0;
+        border: 0;
+        border-top: 0.1em;
+        border-style: solid;
+        border-color: rgb(156, 155, 155);
+        margin-top: -9em;
+        z-index: 1;
+        overflow-x: hidden;
+    }
+}
+
+@media not all and (min-width: 815px) {
+    .bottom {
+        background-color: rgb(36, 35, 35);
+        padding-bottom: 1px;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border: 0;
+        border-top: 0.1em;
+        border-style: solid;
+        border-color: rgb(156, 155, 155);
+        margin-top: 1em;
+        z-index: 1;
+        overflow-x: hidden;
+    }
 }
 
 .bottomlink {
@@ -43,13 +62,46 @@ body {
 .stuff {
     border-bottom: #ffffff dashed;
     overflow-x: hidden;
+    width: 100%;
+    height: 5em;
 }
 
-.TOSText {
-    font-size: 8vw;
-    float: left;
-    margin-left: 5%;
+
+@media all and (min-width: 914px) {
+    .TOSText {
+        font-size: 8vw;
+        float: left;
+        margin-left: 5%;
+    }
 }
+
+@media not all and (min-width: 914px) {
+    .TOSText {
+        font-size: 8vw;
+        float: left;
+        margin-top: 11%;
+        margin-left: 5%;
+    }
+}
+
+@media not all and (min-width: 691px) {
+    .TOSText {
+        font-size: 8vw;
+        float: left;
+        margin-top: 20%;
+        margin-left: 5%;
+    }
+}
+
+@media not all and (min-width: 477px) {
+    .TOSText {
+        font-size: 8vw;
+        float: left;
+        margin-top: 50%;
+        margin-left: 5%;
+    }
+}
+
 
 .bmargin {
     margin: 1em;
@@ -95,37 +147,73 @@ body {
     }
 }
 
-.sec2part1 {
-    margin:8px;
-    color: rgb(223, 220, 220);
-    background-color: rgb(97,97,97);
-    height:10em;
-    width:49%;
-    transform:translateY(11em);
-    border-radius: 5cap;
+@media all and (min-width: 815px) {
+    .sec2part1 {
+        margin:8px;
+        color: rgb(223, 220, 220);
+        background-color: rgb(97,97,97);
+        height:10em;
+        width:49%;
+        transform:translateY(11em);
+        border-radius: 5cap;
+    }
+    .sec2part2 {
+        color: rgb(223, 220, 220);
+        background-color: rgb(97,97,97);
+        height:10em;
+        width:49%;
+        transform:translate(103%, -0.3em);
+        border-radius: 5cap;
+    }
+    .sec3part1 {
+        margin:8px;
+        color: rgb(223, 220, 220);
+        background-color: rgb(97,97,97);
+        height:10em;
+        width:49%;
+        border-radius: 5cap;
+    }
+    .sec3part2 {
+        color: rgb(223, 220, 220);
+        background-color: rgb(97,97,97);
+        height:10em;
+        width:49%;
+        border: dashed 5px #ff8800;
+        transform:translate(101%, -102%);
+        border-radius: 5cap;
+    }
 }
-.sec2part2 {
-    color: rgb(223, 220, 220);
-    background-color: rgb(97,97,97);
-    height:10em;
-    width:49%;
-    transform:translate(103%, -0.3em);
-    border-radius: 5cap;
+
+@media not all and (min-width: 815px) {
+    .sec2part1 {
+        margin:8px;
+        color: rgb(223, 220, 220);
+        background-color: rgb(97,97,97);
+        height:10em;
+        transform:translateY(11em);
+        border-radius: 5cap;
+    }
+    .sec2part2 {
+        color: rgb(223, 220, 220);
+        background-color: rgb(97,97,97);
+        height:10em;
+        margin: 1px;
+        margin-top: 12em;
+        border-radius: 5cap;
+    }
+    .sec3part1 {
+        margin:8px;
+        color: rgb(223, 220, 220);
+        background-color: rgb(97,97,97);
+        height:10em;
+        border-radius: 5cap;
+    }
+    .sec3part2 {
+        color: rgb(223, 220, 220);
+        background-color: rgb(97,97,97);
+        height:10em;
+        border: dashed 5px #ff8800;
+        border-radius: 5cap;
+    }
 }
-.sec3part1 {
-    margin:8px;
-    color: rgb(223, 220, 220);
-    background-color: rgb(97,97,97);
-    height:10em;
-    width:49%;
-    border-radius: 5cap;
-}
-.sec3part2 {
-    color: rgb(223, 220, 220);
-    background-color: rgb(97,97,97);
-    height:10em;
-    width:49%;
-    border: dashed 5px #ff8800;
-    transform:translate(101%, -102%);
-    border-radius: 5cap;
-}
+
