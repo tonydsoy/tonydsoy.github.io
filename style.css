@@ -1,7 +1,8 @@
-/* same here */
+
 
 html {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
 }
 
 body {
@@ -17,8 +18,8 @@ body {
     float: right;
     margin-right: 1em;
     height: 44px;
+    overflow-x: hidden;
 }
-
 
 .bottom {
     background-color: rgb(36, 35, 35);
@@ -30,19 +31,24 @@ body {
     border-style: solid;
     border-color: rgb(156, 155, 155);
     margin-top: -9em;
+    z-index: 1;
+    overflow-x: hidden;
 }
 
 .bottomlink {
     color:rgb(34, 148, 255);
+    overflow-x: hidden;
 }
 
 .stuff {
     border-bottom: #ffffff dashed;
+    overflow-x: hidden;
 }
 
-.TOS {
-    margin: 0px;
-    transform: translate(-12%);
+.TOSText {
+    font-size: 8vw;
+    float: left;
+    margin-left: 5%;
 }
 
 .bmargin {
@@ -53,23 +59,40 @@ body {
 .sec1 {
     color: rgb(223, 220, 220);
     background-color: rgb(97,97,97);
-    width:100%;
     margin:8px;
     margin-top: 6em;
     border-radius: 5cap;
+    padding-top: 1em;
+    padding-left: 1em;
     padding-bottom: 1em;
 }
-.welcometext {
-    transform:translate(3em, 4em);
-    max-width: 140px;
+
+@media not all and (min-width: 1215px) {
+    .welcometext {
+        text-align: center;
+        margin: 1em;
+    }
+
+    .welcomedesc {
+        text-align: center;
+        margin-top: -1em;
+        margin-bottom: 1em;
+    }
 }
 
-.welcomedesc {
-    text-align: center;
-    width:60%;
-    margin-left: 20%;
-    margin-top: -1em;
-    margin-bottom: 1em;
+@media all and (min-width: 1215px) {
+    .welcometext {
+        transform:translate(3em, 4em);
+        max-width: 140px;
+    }
+    
+    .welcomedesc {
+        text-align: center;
+        width:60%;
+        margin-left: 20%;
+        margin-top: -1em;
+        margin-bottom: 1em;
+    }
 }
 
 .sec2part1 {
