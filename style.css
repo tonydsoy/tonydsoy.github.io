@@ -64,6 +64,10 @@ body {
     .thesocials {
         margin-left: 75%; margin-top: -14em;
     }
+
+    .socialtext {
+        margin-left: 75%;
+    }
 }
 
 @media not all and (min-width: 815px) {
@@ -104,9 +108,6 @@ body {
     .bmargin {
         margin: 1em;
         text-align: center;
-    }
-
-    .thesocials {
     }
 }
 
