@@ -229,5 +229,9 @@ body {
         border: dashed 5px #ff8800;
         border-radius: 5cap;
     }
+    .stufftext {
+        transform: translate(1px,1px);
+        text-align: center;
+    }
 }
 
