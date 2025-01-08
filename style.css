@@ -230,8 +230,12 @@ body {
         border-radius: 5cap;
     }
     .stufftext {
-        transform: translate(1px,1px);
-        text-align: center;
+        font-size: 4vw;
     }
 }
 
+@media not (min-width:609px) {
+    .stufftext {
+        font-size: 6vw;
+    }
+}
