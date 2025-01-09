@@ -229,5 +229,13 @@ body {
         border: dashed 5px #ff8800;
         border-radius: 5cap;
     }
+    .stufftext {
+        font-size: 4vw;
+    }
 }
 
+@media not (min-width:609px) {
+    .stufftext {
+        font-size: 6vw;
+    }
+}
