@@ -4,40 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <link rel="stylesheet" href="style.css">
     <title>tonyweb - jsbuttonclickertest</title>
-    <style>
-        html {
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            overflow-x: hidden;
-        }
-
-        body {
-            background: rgb(120, 120, 120);
-            color:rgb(223, 220, 220);
-        }
-
-        .button {
-            border-radius: 1cap; 
-            height: 3.5em;
-            margin-left: 45.3%;
-            margin-top: 4%;
-        }
-        .superbutton {
-            border-radius: 1cap; 
-            height: 3.5em;
-            transform: translate(4em, -8em);
-        }
-        .score {
-            text-align: center;
-            margin-top: 13%;
-        }
-        .superscore {
-            margin:0;
-            text-align: center;
-            margin-left: 32%;
-            transform: translateY(-1.98em);
-        }
-    </style>
 </head>
 <body>
     <input style="border-radius: 1cap;" onclick="javascript:window.location.href='..'" type="image" src="/tonyweb.png"><br>
@@ -46,8 +14,7 @@
     <input id="button" class="button" onclick="javascript:buttonclicked()" type="image" src="./buttonhigher.png">
     <input id="button" style="margin-left: 46.7%;" class="button" onclick="javascript:resetscore()" type="image" src="./reset.png">
     <input id="superbuttons" class="superbutton" onclick="javascript:superbutton()" type="image" src="./superbutton.png">
-    <p style="transform: translate(52em, -14em);">trade 100 score for <br> +1 click multiplier</p>
-    <p style="margin-top: -20em; transform: translateX(12em);">better version of this: <a style="color: rgb(34, 148, 255);" href="https://orteil.dashnet.org/cookieclicker/">cookie clicker</a></p>
+    <p class="trade">trade 100 score for <br> +1 click multiplier with superbutton</p>
 </body>
 <script src="./script.js"></script>
 </html>
