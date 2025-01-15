@@ -4,82 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/favicon.png">
-    <style>
-        body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(120, 120, 120);
-    color: #ffffff;
-    overflow-x: hidden;
-}
-
-img {
-    height: 400px;
-}
-
-.row1 {
-    margin-left: 1em;
-}
-
-.row2 {
-    margin-left: 1em;
-}
-
-.row3 {
-    margin-left: 1em;
-}
-
-.pretzel {
-    margin:0;
-    margin-left: 43em;
-    margin-top: -3em;
-}
-
-.bowling {
-    margin:0;
-    transform: translate(23em, -2em);
-}
-
-.sec {
-    background-color: rgb(97,97,97);
-    margin-top: 6%;
-    width: 100%;
-    height: 136em;
-    border-radius: 1.5cap;
-}
-
-h1 {
-    margin-left: 1em;
-    transform:translateY(0.5em);
-}
-
-h2 {
-    color:#ffffff;
-}
-    </style>
+    <link rel="stylesheet" href="style.css">
     <title>tonyweb - pictures</title>
 </head>
 <body>
     <input style="border-radius: 1cap;" onclick="javascript:window.location.href='..'" type="image" src="/tonyweb.png">
     <div class="sec">
-        <h1>cool pictures i had in my camera roll.</h1>
+        <h1 class="welcometext">cool pictures i had in my camera roll.</h1>
         <div class="row1">
-            <br>
-            <h2 style="margin-left: 4em;">CN tower visit</h2>
-            <h2 class="bowling">my bowling scores (i won)</h2>
-            <h2 class="pretzel">coolest pretzel ever</h2>
             <img src="towers.jpg">
             <img src="towersview.jpg">
-            <img style="margin-left: 2em;" src="bowling.jpg">
             <img src="pretzel.jpg" style="margin-left: 5em;">
+            <img style="margin-left: 2em;" src="bowling.jpg">
         </div>
-        <div class="row2">
-            <h1>liminal picture</h1><br>
-            <img style="height:650px" src="liminal.jpg">
-        </div>
-        <div class="row3">
+            <img style="width: 90%; margin-top: 2em;" src="liminal.jpg">
             <h1>discovered a duplication glitch. used it wisely.</h1><br>
-            <img style="height:650px" src="nohacks.jpg">
-        </div>
+            <img style="width: 90%;" src="nohacks.jpg">
     </div>
 </body>
 </html>
