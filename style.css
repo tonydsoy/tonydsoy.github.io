@@ -21,6 +21,11 @@ body {
     overflow-x: hidden;
 }
 
+.available {
+    color:rgb(91, 169, 241);
+    margin-left: 0.7em;
+}
+
 
 @media all and (min-width: 815px) {
     .bottom {
