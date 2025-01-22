@@ -1,0 +1,53 @@
+html {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background: rgb(120, 120, 120);
+    color:rgb(223, 220, 220);
+    align-items: center;
+}
+
+.button {
+    border-radius: 1cap; 
+    height: 3.5em;
+    margin-left: 45.3%;
+    margin-top: 4%;
+}
+
+@media all and (min-width: 617px) {
+    .superbutton {
+        border-radius: 1cap; 
+        height: 3.5em;
+        transform: translate(4em, -8em);
+    }
+
+    .trade {
+        margin-left: 50%;
+    }
+}
+
+@media not all and (min-width: 617px) {
+    .superbutton {
+        border-radius: 1cap; 
+        height: 3.5em;
+        margin-left: -15em;
+        transform: translateY(5em)
+    }
+
+    .trade {
+        margin-left: 50%;
+        margin-top: 20%
+    }
+}
+
+.score {
+    text-align: center;
+    margin-top: 15vh;
+}
+.superscore {
+    margin:0;
+    text-align: center;
+    margin-left: 32%;
+}
