@@ -13,3 +13,5 @@ if (months[date.getMonth()] + " " + date.getDate() == "January 23") {
 function showdate() {
     yarg.innerHTML = months[date.getMonth()] + ", " + date.getDate() + " " + date.getFullYear()
 }
+
+console.log("set <yarg> to date")
