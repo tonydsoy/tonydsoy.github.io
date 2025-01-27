@@ -6,8 +6,8 @@ html {
 }
 
 body {
-    background: rgb(120, 120, 120);
-    color:rgb(223, 220, 220);
+    background-color: rgb(120, 120, 120);
+    color:rgb(220, 220, 220);
     margin:0;
     overflow-x: hidden;
 }
