@@ -47,6 +47,11 @@ a {
     margin-left: 1vw;
 }
 
+.surroundcookie {
+    display:flex; flex-direction: row; align-items: center; justify-content: center; width:20vw;
+    margin-left: 1vw;
+}
+
 .fix {
     display: flex;
     flex-direction: row;
