@@ -33,3 +33,22 @@ a {
 .surroundjsbc {
     display:flex; flex-direction: row; align-items: center; justify-content: center; width:20vw;
 }
+
+.tamper {
+    background-color: #00000022;
+    width: 20vw;
+    display:inline-block;
+    border-radius: 1cap;
+    padding-bottom: 3vh;
+}
+
+.surroundtmpr {
+    display:flex; flex-direction: row; align-items: center; justify-content: center; width:20vw;
+    margin-left: 1vw;
+}
+
+.fix {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.5vw;
+}
