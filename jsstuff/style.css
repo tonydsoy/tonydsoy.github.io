@@ -31,7 +31,7 @@ a {
 }
 
 .surroundjsbc {
-    display:flex; flex-direction: row; align-items: center; justify-content: center; width:20vw;
+    display:flex; flex-direction: row; align-items: center; justify-content: center; width: 20%;
 }
 
 .tamper {
@@ -43,12 +43,12 @@ a {
 }
 
 .surroundtmpr {
-    display:flex; flex-direction: row; align-items: center; justify-content: center; width:20vw;
+    display:flex; flex-direction: row; align-items: center; justify-content: center; width:20%;
     margin-left: 1vw;
 }
 
 .surroundcookie {
-    display:flex; flex-direction: row; align-items: center; justify-content: center; width:20vw;
+    display:flex; flex-direction: row; align-items: center; justify-content: center; width:20%;
     margin-left: 1vw;
 }
 
