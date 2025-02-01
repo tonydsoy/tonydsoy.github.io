@@ -9,12 +9,12 @@ function getCookie(name) {
     }
     return null;  // Return null if the cookie doesn't exist
 }
-document.getElementById("text").innerHTML = getCookie("cookie")
+document.getElementById("text").innerHTML = getCookie("cookietest")
 
 
 
 function set() {
-    document.cookie = "cookie=" + document.getElementById("input").value
+    document.cookie = "cookietest=" + document.getElementById("input").value
 }
 
 function get() {
