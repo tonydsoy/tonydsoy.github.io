@@ -26,12 +26,12 @@ a {
     background-color: #00000022;
     width: 20vw;
     display:inline-block;
-    border-radius: 1cap;
+    border-radius:d 1cap;
     padding-bottom: 3vh;
 }
 
 .surroundjsbc {
-    display:flex; flex-direction: row; align-items: center; justify-content: center; width: 20%;
+    display:flex; flex-direction: row; align-items: center; justify-content: center; width: 20vw;
 }
 
 .tamper {
@@ -43,12 +43,12 @@ a {
 }
 
 .surroundtmpr {
-    display:flex; flex-direction: row; align-items: center; justify-content: center; width:20%;
+    display:flex; flex-direction: row; align-items: center; justify-content: center; width:20vw;
     margin-left: 1vw;
 }
 
 .surroundcookie {
-    display:flex; flex-direction: row; align-items: center; justify-content: center; width:20%;
+    display:flex; flex-direction: row; align-items: center; justify-content: center; width:20vw;
     margin-left: 1vw;
 }
 
@@ -56,4 +56,5 @@ a {
     display: flex;
     flex-direction: row;
     margin-left: 0.5vw;
+    font-size: 1.2vw;
 }
