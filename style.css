@@ -21,6 +21,13 @@ body {
     overflow-x: hidden;
 }
 
+.stuff {
+    border-color: #ffffff;
+    border-width: 3px;
+    margin-top: 5vh;
+    border-style: dashed;
+}
+
 .available {
     color:rgb(91, 169, 241);
     margin-left: 0.7em;
