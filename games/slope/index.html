@@ -1,0 +1,51 @@
+<head>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="TemplateData/unityloader41.js"></script>
+    <title>tonyweb - slope</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/slope.json", { onProgress: UnityProgress, Module: { onRuntimeInitialized: function() { UnityProgress(gameInstance, "complete") } } });
+    </script>
+    <style>
+        .alert {
+          padding: 20px;
+          background-color: #0096FF;
+          color: white;
+        }
+
+        .closebtn {
+          margin-left: 15px;
+          color: white;
+          p {text-align: center;}  
+          font-weight: bold;
+          float: right;
+          font-size: 22px;
+          line-height: 20px;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+
+        .closebtn:hover {
+          color: black;
+        }
+    </style>
+</head>
+
+<!--- 
+stolen from this guy
+https://github.com/cgolden15/Slope-Game/ 
+
+Drop a star on the repo if you enjoy.
+--->
+
+<body style="margin: 0; overflow: hidden;">
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        removed all references to ads because im not making money off this!
+    </div>
+    <div class="webgl-content">
+        <div id="gameContainer" style="width: 100%; height: 100%; margin: 0;"></div>
+    </div>
+</body>
+<!-- Slope game by y8 games, not cgolden or me.-->
