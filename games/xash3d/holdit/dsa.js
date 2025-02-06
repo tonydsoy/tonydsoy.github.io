@@ -20,4 +20,5 @@ if (getCookie("dsa") == "yep!") {
 
 function dontshowagain() {
     document.cookie = "dsa=yep!; path=/"
+    window.location.href = ".."
 }
