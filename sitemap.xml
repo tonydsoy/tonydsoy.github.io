@@ -1,185 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<urlset>
 <url>
   <loc>https://tonydsoy.github.io/</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/cookiesetter/fromen/</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/jsstuff/</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/pictures/</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/games/</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/jokes/terms/</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/jsstuff/jsbuttonclickertest/</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/jsstuff/tampermonkey/</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/jsstuff/cookie/</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/diff.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/index.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/easyChoose.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/hardChoose.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/lvl1.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/lvl2.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/lvl3.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/lvl4.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/lvl5.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/hlvl1.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/hlvl2.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/wrong1.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/correct1.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/correct2.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/wrong2.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/correct3.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/wrong3.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/wrong4.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/correct4.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/wrong5.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/correct5.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/hwrong1.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/hcorrect1.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/hlvl2correct.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://tonydsoy.github.io/bad-game-old/hlvl2wrong.html</loc>
-  <lastmod>2025-02-06T01:11:09+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 
