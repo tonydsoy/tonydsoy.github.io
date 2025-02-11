@@ -1,13 +1,11 @@
-
 html {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 body {
-    background: rgb(120, 120, 120);
-    color:rgb(223, 220, 220);
+    background-color: rgb(120, 120, 120);
+    color:rgb(220, 220, 220);
     margin:0;
     overflow-x: hidden;
 }
@@ -19,6 +17,13 @@ body {
     margin-right: 1em;
     height: 44px;
     overflow-x: hidden;
+}
+
+.stuff {
+    border-color: #ffffff;
+    border-width: 3px;
+    margin-top: 5vh;
+    border-style: dashed;
 }
 
 .available {
@@ -197,7 +202,7 @@ body {
         background-color: rgb(97,97,97);
         height:10em;
         width:49%;
-        border: dashed 5px #ff8800;
+        border: dashed 4px rgb(97,97,97);
         transform:translate(101%, -102%);
         border-radius: 5cap;
     }
@@ -231,7 +236,7 @@ body {
         color: rgb(223, 220, 220);
         background-color: rgb(97,97,97);
         height:10em;
-        border: dashed 5px #ff8800;
+        border: dashed 4px rgb(97,97,97);
         border-radius: 5cap;
     }
     .stufftext {

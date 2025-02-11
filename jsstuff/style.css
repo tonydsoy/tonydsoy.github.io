@@ -1,0 +1,60 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(120, 120, 120);
+    margin:0;
+    color: rgb(223,220,220)
+}
+
+a {
+    color: rgb(34, 148, 255);
+}
+
+.sec {
+    background-color: rgb(97,97,97);
+    border-radius: 2cap;
+    margin:8px;
+    padding-top: 0.5vh;
+    padding-left: 0.5vw;
+    padding-bottom: 7vh;
+    text-align: center;
+}
+
+.jsbuttonclicker {
+    background-color: #00000022;
+    width: 20vw;
+    display:inline-block;
+    border-radius: 1cap;
+    padding-bottom: 3vh;
+}
+
+.surroundjsbc {
+    display:flex; flex-direction: row; align-items: center; justify-content: center; width: 20vw;
+}
+
+.tamper {
+    background-color: #00000022;
+    width: 20vw;
+    display:inline-block;
+    border-radius: 1cap;
+    padding-bottom: 3vh;
+}
+
+.surroundtmpr {
+    display:flex; flex-direction: row; align-items: center; justify-content: center; width:20vw;
+    margin-left: 1vw;
+}
+
+.surroundcookie {
+    display:flex; flex-direction: row; align-items: center; justify-content: center; width:20vw;
+    margin-left: 1vw;
+}
+
+.fix {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.5vw;
+    font-size: 1.2vw;
+}
