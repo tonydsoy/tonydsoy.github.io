@@ -22,7 +22,8 @@ body {
 .stuff {
     border-color: #ffffff;
     border-width: 3px;
-    margin-top: 5vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     border-style: dashed;
 }
 
@@ -42,7 +43,6 @@ body {
         border-top: 0.1em;
         border-style: solid;
         border-color: rgb(156, 155, 155);
-        margin-top: -9em;
         z-index: 1;
         overflow-x: hidden;
     }
@@ -171,78 +171,47 @@ body {
     }
 }
 
-@media all and (min-width: 815px) {
-    .sec2part1 {
-        margin:8px;
-        color: rgb(223, 220, 220);
-        background-color: rgb(97,97,97);
-        height:10em;
-        width:49%;
-        transform:translateY(11em);
-        border-radius: 5cap;
+.row {
+    display:flex;
+    flex-direction: row;
+}
+
+.topleft {
+    background-color: rgb(97,97,97);
+    border-radius: 4cap;
+    margin:8px;
+    width:50%;
+    padding-top: 0.5vh;
+    padding-left: 2vw;
+    padding-bottom: 7vh;
+}
+    
+.topright {
+    background-color: rgb(97,97,97);
+    border-radius: 4cap;
+    margin:8px;
+    width:50%;
+    padding-top: 0.5vh;
+    padding-left: 2vw;
+    padding-bottom: 7vh;
+}
+
+@media not all and (min-width:815px) {
+    .row {
+        flex-direction: column;
     }
-    .sec2part2 {
-        color: rgb(223, 220, 220);
-        background-color: rgb(97,97,97);
-        height:10em;
-        width:49%;
-        transform:translate(103%, -0.3em);
-        border-radius: 5cap;
+    
+    .topleft {
+        width:auto;
+        text-align: center;
     }
-    .sec3part1 {
-        margin:8px;
-        color: rgb(223, 220, 220);
-        background-color: rgb(97,97,97);
-        height:10em;
-        width:49%;
-        border-radius: 5cap;
-    }
-    .sec3part2 {
-        color: rgb(223, 220, 220);
-        background-color: rgb(97,97,97);
-        height:10em;
-        width:49%;
-        border: dashed 4px rgb(97,97,97);
-        transform:translate(101%, -102%);
-        border-radius: 5cap;
+    
+    .topright {
+        width:auto;
+        text-align: center;
     }
 }
 
-@media not all and (min-width: 815px) {
-    .sec2part1 {
-        margin:8px;
-        color: rgb(223, 220, 220);
-        background-color: rgb(97,97,97);
-        height:10em;
-        transform:translateY(11em);
-        border-radius: 5cap;
-    }
-    .sec2part2 {
-        color: rgb(223, 220, 220);
-        background-color: rgb(97,97,97);
-        height:10em;
-        margin: 1px;
-        margin-top: 12em;
-        border-radius: 5cap;
-    }
-    .sec3part1 {
-        margin:8px;
-        color: rgb(223, 220, 220);
-        background-color: rgb(97,97,97);
-        height:10em;
-        border-radius: 5cap;
-    }
-    .sec3part2 {
-        color: rgb(223, 220, 220);
-        background-color: rgb(97,97,97);
-        height:10em;
-        border: dashed 4px rgb(97,97,97);
-        border-radius: 5cap;
-    }
-    .stufftext {
-        font-size: 4vw;
-    }
-}
 
 @media not (min-width:609px) {
     .stufftext {
