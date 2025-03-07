@@ -20,3 +20,35 @@ a {
     padding-bottom: 7vh;
     text-align: center;
 }
+
+#ch {
+    display:none
+}
+
+#ch:checked ~ .content {
+    display:block
+}
+
+#ch:checked ~ .showmore {
+    display:none;
+}
+
+#ch:checked ~ .showless {
+    display: block;
+}
+
+.showless {
+    display:none
+}
+
+.content {
+    display:none;
+}
+
+
+label {
+    display: inline-block;
+    cursor:pointer;
+    color:rgb(34, 148, 255);
+    text-decoration: underline;
+}
