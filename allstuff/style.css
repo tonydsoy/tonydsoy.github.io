@@ -40,6 +40,15 @@ a {
     padding-left: 2vw;
     padding-bottom: 7vh;
 }
+
+.long {
+    background-color: rgb(97,97,97);
+    border-radius: 2cap;
+    margin:8px;
+    padding-top: 0.5vh;
+    padding-left: 2vw;
+    padding-bottom: 7vh;
+}
     
 .topright {
     background-color: rgb(97,97,97);
