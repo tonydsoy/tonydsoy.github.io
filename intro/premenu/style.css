@@ -1,0 +1,80 @@
+html {
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+}
+
+body {
+    margin:0px;
+    overflow: hidden;
+    background-image: url(bgpicture.png);
+    background-color: #000000;
+}
+
+.header {
+    margin-left: 1em;
+    transform:translateY(-0.7em)
+}
+
+.sec {
+    width: 60vw;
+    height: 80vh;
+    background-color: #000000aa;
+    float: right;
+    margin-right: 2.5vw;
+    margin-top: 5vh;
+    position: relative;
+}
+
+.pfp {
+    display:inline-block;
+    height:4em;
+    width:4em;
+    border-radius: 50%;
+}
+
+.secpadding {
+    padding:2em;
+}
+
+.info {
+    width:10vw;
+    height:5vw;
+    background-color: #000000aa;
+    margin-left: -46vw;
+    padding:0;
+    transform: translate(-2.5vw, 17vh);
+    float:right;
+    margin-top: 40%;
+}
+.options {
+    width:14vw;
+    height:5vw;
+    background-color: #000000aa;
+    margin-left: -14vw;
+    padding:0;
+    transform: translate(-15vw, 17vh);
+    float:right;
+    margin-top: 40%;
+}
+.start {
+    width:16.4vw;
+    height:5vw;
+    background-color: #000000aa;
+    margin-left: -16.4vw;
+    padding:0;
+    transform: translate(-31vw, 17vh);
+    float:right;
+    margin-top: 40%;
+}
+
+.start:hover {
+    background-color: #222222aa;cursor:pointer
+}
+
+.options:hover {
+    background-color: #222222aa;cursor:pointer
+}
+
+.info:hover {
+    background-color: #222222aa;cursor:pointer
+}

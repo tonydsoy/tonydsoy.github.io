@@ -1,0 +1,30 @@
+body {
+    margin:0px;
+    overflow: hidden;
+    height: 100vh;
+}
+
+
+
+.tf2screenshot {
+    margin:0;
+    margin-left: 33%;
+    object-fit: cover;
+}
+
+.ukscreenshot {
+    position: absolute;
+    object-fit: cover;
+    margin:0;
+}
+.hl2screenshot {
+    position: absolute;
+    object-fit: cover;
+    margin-left: 0em;
+}
+
+.sec {
+    position:absolute;
+    width: 70%;
+    height: 90%;
+}

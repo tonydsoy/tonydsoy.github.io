@@ -1,0 +1,31 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    margin:0;
+    background-image: url(../bgpicture.png);
+    overflow: hidden;
+}
+
+.img {
+    backdrop-filter: blur(7px);
+    height:101vh;
+    margin:0;
+    margin-top: -3vh;
+}
+
+.bg {
+    width: 30vw;
+    height: 10vh;
+    background-color: #000000aa;
+    margin-left: calc(50% - 15vw);
+    transform: translateY(45vh);
+    border-radius: 1cap;
+}
+
+.loading {
+    margin-left: 7.5vw;
+    transform: translateY(2.5vh);
+    color:white;
+}
