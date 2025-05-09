@@ -1,18 +1,20 @@
-<p>please enable javascript on this site</p>
+<p>Please enable JavaScript on this site</p>
+
 <script>
 const urlParams = new URLSearchParams(window.location.search);
 
 // Access the 'lang' parameter
 const lang = urlParams.get('lang');
-if (lang=="fr") {
-  document.cookie = "lang=fr; path=/"
-  window.location.href="/fr-fr/"
-}
-  
-if (lang=="en") {
-  document.cookie = "lang=en; path=/";
-  window.location.href="/"
-}
 
-window.location.href = "/";
+// Check for 'lang' and redirect accordingly
+if (lang === "fr") {
+  document.cookie = "lang=fr; path=/";  // Set cookie for French
+  window.location.href = "/fr-fr/";      // Redirect to French version of the site
+} else if (lang === "en") {
+  document.cookie = "lang=en; path=/";  // Set cookie for English
+  window.location.href = "/";            // Redirect to the English home page
+} else {
+  window.location.href = "/";            // Default redirect if 'lang' is not set or is invalid
+}
 </script>
+// thanks gpt!
