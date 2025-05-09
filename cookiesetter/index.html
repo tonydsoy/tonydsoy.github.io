@@ -1,2 +1,18 @@
-<meta http-equiv="refresh" content="0; url=https://tonydsoy.github.io/">
-<A href="https://tonydsoy.github.io">redirect</A>
+<p>please enable javascript on this site</p>
+<script>
+const urlParams = new URLSearchParams(window.location.search);
+
+// Access the 'lang' parameter
+const lang = urlParams.get('lang');
+if (lang=="fr") {
+  document.cookie = "lang=fr; path=/"
+  window.location.href="/fr-fr/"
+}
+  
+if (lang=="en") {
+  document.cookie = "lang=en; path=/";
+  window.location.href="/"
+}
+
+window.location.href = "/";
+</script>
