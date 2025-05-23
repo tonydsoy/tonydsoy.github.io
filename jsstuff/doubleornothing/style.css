@@ -24,3 +24,10 @@ a {
 .nobold {
     font-weight: 500;
 }
+
+.redtext {
+    color:red;
+}
+.greentext {
+    color:limegreen;
+}

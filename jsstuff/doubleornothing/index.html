@@ -10,8 +10,12 @@
 <body>
     <input style="border-radius: 1cap; margin: 8px;" onclick="javascript:window.location.href='/'" type="image" src="/tonyweb.png">
     <div class="sec">
-        <h2 id="holdscore">your score is: <span id="scorehtml">waitforjs</span></h2>
-        <p>bet:</p><input type="number">
+        <h2 id="holdscore">your score is: <span id="scorehtml">500</span></h2>
+        <p id="results">press bet to see results</p>
+        <span id="betcontrols">
+            <p>bet:</p><input id="input" type="number">
+            <button id="buttonhtml">GO!</button>
+        </span>
     </div>
     <script src="game.js"></script>
 </body>
