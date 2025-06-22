@@ -1,0 +1,48 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(120, 120, 120);
+    margin:0;
+    padding:0;
+    color: rgb(223,220,220)
+}
+
+a {
+    color: rgb(34, 148, 255);
+}
+.sec {
+    background-color: rgb(97,97,97);
+    border-radius: 2cap;
+    margin:8px;
+    padding-top: 0.5vh;
+    padding-left: 0.5vw;
+    padding-bottom: 7vh;
+    text-align: center;
+}
+
+#fullscreen {
+    height:5vh;
+    position:absolute;
+    cursor:pointer;
+}
+
+#fsc:checked ~ #iframe {
+    height:100vh;
+    width:100vw;
+}
+
+.fsc {
+    display:inline-block;
+    cursor:pointer;
+}
+
+.fsc2 {
+    cursor:pointer;
+}
+
+#iframe {
+    width:640px; 
+    height:360px;
+}
