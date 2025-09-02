@@ -46,7 +46,45 @@ body {
   margin-top: 3em;
 }
 
+#mobile {
+  display:none;
+}
+
 .ddselector {
+  width:6em;
+  display:inline-block;
+  color:#ffffff;
+  background-color:rgb(51, 51, 51);
+  border-radius: 0.7cap;
+  cursor:pointer;
+  user-select: none;
+}
+
+#textMobile {
+  display:none;
+}
+
+p {
+  color:#ffffff
+}
+
+#unlockMobile {
+  cursor:pointer; /* im a little bit stupid. */
+  text-decoration: underline;
+  color:aqua
+}
+
+#relockMobile {
+  cursor:pointer; /* im a little bit stupid. */
+  text-decoration: underline;
+  color:aqua
+}
+
+#textMobileBypass {
+  display:none;
+}
+
+.ddselector2 {
   width:6em;
   display:inline-block;
   color:#ffffff;
@@ -61,6 +99,10 @@ body {
 }
 
 .sp8 {
+  font-size: 1.5em;
+}
+
+.sp8F {
   font-size: 1.5em;
 }
 
