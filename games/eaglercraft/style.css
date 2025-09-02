@@ -17,7 +17,8 @@ a {
     border-radius: 2cap;
     margin:8px;
     padding-top: 0.5vh;
-    padding-left: 0.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
     padding-bottom: 7vh;
     text-align: center;
 }
@@ -43,6 +44,6 @@ a {
 }
 
 #iframe {
-    width:640px; 
-    height:360px;
+    width:100%;
+    height:70vh;
 }
