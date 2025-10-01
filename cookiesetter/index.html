@@ -9,7 +9,7 @@ const lang = urlParams.get('lang');
 // Check for 'lang' and redirect accordingly
 if (lang === "fr") {
   document.cookie = "lang=fr; path=/";  // Set cookie for French
-  window.location.href = "/fr-fr/";      // Redirect to French version of the site
+  window.location.href = "/fr-fr/warn.html";      // Redirect to French version of the site
 } else if (lang === "en") {
   document.cookie = "lang=en; path=/";  // Set cookie for English
   window.location.href = "/";            // Redirect to the English home page
