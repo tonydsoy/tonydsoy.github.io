@@ -179,7 +179,6 @@ body {
 .topleft {
     background-color: rgb(97,97,97);
     border-radius: 4cap;
-    font-size:1.5em;
     margin:8px;
     width:50%;
     padding-top: 0.5vh;
@@ -192,7 +191,6 @@ body {
     border-radius: 4cap;
     margin:8px;
     width:50%;
-    font-size:1.5em;
     padding-top: 0.5vh;
     padding-left: 2vw;
     padding-bottom: 7vh;
@@ -220,4 +218,3 @@ body {
         font-size: 6vw;
     }
 }
-
