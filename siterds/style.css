@@ -1,0 +1,21 @@
+@keyframes backgroundFade {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position:0%;
+    }
+}
+
+body {
+    background:linear-gradient(45deg, #2d0f36, #000000);
+    background-size:200%, 100%;
+    animation: infinite backgroundFade ease-in-out 10s;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#fff;
+    margin:0;
+    padding:0;
+}
