@@ -16,6 +16,43 @@ body {
     animation: infinite backgroundFade ease-in-out 10s;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:#fff;
-    margin:0;
     padding:0;
+    height:100vh;
+}
+
+.header {
+    position:fixed;
+    width:100vw;
+    height:4cap;
+}
+
+.header1 {
+    background-color:#00000055;
+    display:inline-block;
+    width:fit-content;
+    padding-left:1vw;
+    padding-right:1vw;
+    text-align:center;
+    height:100%;
+    border-radius:6cap;
+    padding-top:1cap;
+}
+
+.header1 > a {
+    height:100%;
+    font-size:2.5cap;
+    text-align:center;
+}
+
+.header2 {
+    background-color:#00000055;
+    margin-right:2vw;
+    float:right;
+    width:fit-content;
+    padding-left:1vw;
+    padding-right:1vw;
+    text-align:center;
+    height:100%;
+    border-radius:6cap;
+    padding-top:1cap;
 }
