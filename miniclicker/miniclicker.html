@@ -40,6 +40,10 @@
     display:none;
 }
 
+#stats {
+    display:none;
+}
+
 #udoubleclick0 {
     display:none;
 }
@@ -141,6 +145,18 @@
     const htmludoublemine2 = document.getElementById("udoublemine2");
     const htmlubuydoublemine2 = document.getElementById("ubuydoublemine2");
 
+    // stats
+
+    const htmlstatscookies = document.getElementById("statscookies")
+    const htmlstatscps = document.getElementsByClassName("statscps")
+
+    const htmlsclickerpower = document.getElementById("sclickerpower")
+    const htmlsgrannypower = document.getElementById("sgrannypower")
+    const htmlsfarmpower = document.getElementById("sfarmpower")
+    const htmlsminepower = document.getElementById("sminepower")
+
+    // very important variables
+
     var cps = 1;
     var cookies = 0.0;
 
@@ -149,24 +165,38 @@
     var currentmenu = 0;
     const htmlupgradebutton = document.getElementById("upgrbutton");
     const htmlshopbutton = document.getElementById("shopbutton");
+    const htmlstatsbutton = document.getElementById("statsbutton")
     htmlshopbutton.style.textDecoration = "underline";
 
     const htmlshop = document.getElementById("shop");
     const htmlupgrades = document.getElementById("upgrades");
+    const htmlstats = document.getElementById("stats")
 
     function updatemenu() {
         if (currentmenu == 0) {
-            htmlupgradebutton.style.textDecoration = "none";
             htmlshopbutton.style.textDecoration = "underline";
+            htmlupgradebutton.style.textDecoration = "none";
+            htmlstatsbutton.style.textDecoration = "none";
 
             htmlshop.style.display = "block";
             htmlupgrades.style.display = "none";
+            htmlstats.style.display = "none";
         } else if (currentmenu == 1) {
-            htmlupgradebutton.style.textDecoration = "underline";
             htmlshopbutton.style.textDecoration = "none";
+            htmlupgradebutton.style.textDecoration = "underline";
+            htmlstatsbutton.style.textDecoration = "none";
 
             htmlshop.style.display = "none";
             htmlupgrades.style.display = "block";
+            htmlstats.style.display = "none";
+        } else if (currentmenu == 2) {
+            htmlshopbutton.style.textDecoration = "none";
+            htmlupgradebutton.style.textDecoration = "none";
+            htmlstatsbutton.style.textDecoration = "underline";
+
+            htmlshop.style.display = "none";
+            htmlupgrades.style.display = "none";
+            htmlstats.style.display = "block";
         }
     }
 
@@ -177,6 +207,11 @@
 
     htmlshopbutton.addEventListener("click",function(){
         currentmenu = 0;
+        updatemenu();
+    })
+
+    htmlstatsbutton.addEventListener("click",function(){
+        currentmenu = 2;
         updatemenu();
     })
 
@@ -227,6 +262,16 @@
         cps = (clickers*(cookiesperclickandauto/10))+(grannys*grannypower)+(farms*farmpower)+(mines*minepower);
         cps = Math.round(cps*10)/10;
 
+        var clickerscps = clickers*(cookiesperclickandauto/10);
+        var grannycps = grannys*grannypower
+        var farmcps = farms*farmpower
+        var minecps = mines*minepower
+
+        htmlsclickerpower.textContent = clickerscps;
+        htmlsgrannypower.textContent = grannycps;
+        htmlsfarmpower.textContent = farmcps;
+        htmlsminepower.textContent = minecps;
+
         if (clickers == 1) {
             if (!clickeru0) htmludoubleclick0.style.display = "block";
             if (!clickeru1) htmludoubleclick1.style.display = "block";
@@ -266,6 +311,8 @@
         }
 
         htmlcps.textContent = cps;
+        htmlstatscookies.textContent = Math.floor(cookies);
+        htmlstatscps.textContent = cps;
         htmlcookies.textContent = Math.floor(cookies);
         htmlclickerprices.textContent = clickerprice;
         htmlclickers.textContent = clickers;
@@ -462,7 +509,7 @@
     <div id="clickcookie"></div><br>
     <div id="buyplace">
         <span id="menubuttons">
-            <span id="shopbutton">shop</span> <span id="upgrbutton">upgrades</span><br><br>
+            <span id="shopbutton">shop</span> <span id="upgrbutton">upgrades</span> <span id="statsbutton">stats</span><br><br>
         </span>
         <span id="shop">
             <span>
@@ -550,6 +597,23 @@
             <span id="udoublemine2">
                 <span id="ubuydoublemine2" class="buy">buy</span>
                 x2 mine upgrade for 550000<br>
+            </span>
+        </span>
+
+        <span id="stats">
+            <span>
+                cookies = <span id="statscookies">0</span><br>
+                cps = <span id="statscps">0</span>
+                <br><br>
+                <span>
+                    building powers<br><br>
+                    <span>
+                        clicker/click = +<span id="sclickerpower">0</span>cps<br>
+                        granny = +<span id="sgrannypower">0</span>cps<br>
+                        farm = += <span id="sfarmpower">0</span>cps<br>
+                        mine = +<span id="sminepower">0</span>cps<br>
+                    </span>
+                </span>
             </span>
         </span>
     </div>

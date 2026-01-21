@@ -31,6 +31,10 @@ body {
     display:none;
 }
 
+#stats {
+    display:none;
+}
+
 #udoubleclick0 {
     display:none;
 }

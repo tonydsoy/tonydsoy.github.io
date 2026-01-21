@@ -56,6 +56,18 @@ document.addEventListener('DOMContentLoaded',function() {
     const htmludoublemine2 = document.getElementById("udoublemine2");
     const htmlubuydoublemine2 = document.getElementById("ubuydoublemine2");
 
+    // stats
+
+    const htmlstatscookies = document.getElementById("statscookies")
+    const htmlstatscps = document.getElementsByClassName("statscps")
+
+    const htmlsclickerpower = document.getElementById("sclickerpower")
+    const htmlsgrannypower = document.getElementById("sgrannypower")
+    const htmlsfarmpower = document.getElementById("sfarmpower")
+    const htmlsminepower = document.getElementById("sminepower")
+
+    // very important variables
+
     var cps = 1;
     var cookies = 0.0;
 
@@ -64,24 +76,38 @@ document.addEventListener('DOMContentLoaded',function() {
     var currentmenu = 0;
     const htmlupgradebutton = document.getElementById("upgrbutton");
     const htmlshopbutton = document.getElementById("shopbutton");
+    const htmlstatsbutton = document.getElementById("statsbutton")
     htmlshopbutton.style.textDecoration = "underline";
 
     const htmlshop = document.getElementById("shop");
     const htmlupgrades = document.getElementById("upgrades");
+    const htmlstats = document.getElementById("stats")
 
     function updatemenu() {
         if (currentmenu == 0) {
-            htmlupgradebutton.style.textDecoration = "none";
             htmlshopbutton.style.textDecoration = "underline";
+            htmlupgradebutton.style.textDecoration = "none";
+            htmlstatsbutton.style.textDecoration = "none";
 
             htmlshop.style.display = "block";
             htmlupgrades.style.display = "none";
+            htmlstats.style.display = "none";
         } else if (currentmenu == 1) {
-            htmlupgradebutton.style.textDecoration = "underline";
             htmlshopbutton.style.textDecoration = "none";
+            htmlupgradebutton.style.textDecoration = "underline";
+            htmlstatsbutton.style.textDecoration = "none";
 
             htmlshop.style.display = "none";
             htmlupgrades.style.display = "block";
+            htmlstats.style.display = "none";
+        } else if (currentmenu == 2) {
+            htmlshopbutton.style.textDecoration = "none";
+            htmlupgradebutton.style.textDecoration = "none";
+            htmlstatsbutton.style.textDecoration = "underline";
+
+            htmlshop.style.display = "none";
+            htmlupgrades.style.display = "none";
+            htmlstats.style.display = "block";
         }
     }
 
@@ -92,6 +118,11 @@ document.addEventListener('DOMContentLoaded',function() {
 
     htmlshopbutton.addEventListener("click",function(){
         currentmenu = 0;
+        updatemenu();
+    })
+
+    htmlstatsbutton.addEventListener("click",function(){
+        currentmenu = 2;
         updatemenu();
     })
 
@@ -142,6 +173,16 @@ document.addEventListener('DOMContentLoaded',function() {
         cps = (clickers*(cookiesperclickandauto/10))+(grannys*grannypower)+(farms*farmpower)+(mines*minepower);
         cps = Math.round(cps*10)/10;
 
+        var clickerscps = clickers*(cookiesperclickandauto/10);
+        var grannycps = grannys*grannypower
+        var farmcps = farms*farmpower
+        var minecps = mines*minepower
+
+        htmlsclickerpower.textContent = clickerscps;
+        htmlsgrannypower.textContent = grannycps;
+        htmlsfarmpower.textContent = farmcps;
+        htmlsminepower.textContent = minecps;
+
         if (clickers == 1) {
             if (!clickeru0) htmludoubleclick0.style.display = "block";
             if (!clickeru1) htmludoubleclick1.style.display = "block";
@@ -181,6 +222,8 @@ document.addEventListener('DOMContentLoaded',function() {
         }
 
         htmlcps.textContent = cps;
+        htmlstatscookies.textContent = Math.floor(cookies);
+        htmlstatscps.textContent = cps;
         htmlcookies.textContent = Math.floor(cookies);
         htmlclickerprices.textContent = clickerprice;
         htmlclickers.textContent = clickers;
