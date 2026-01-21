@@ -1,0 +1,76 @@
+body {
+    background-color: lightgrey;
+}
+
+#clickcookie {
+    height:2em;
+    width:2em;
+    background-image:url("https://cookieclicker.wiki.gg/images/thumb/PerfectCookie.png/210px-PerfectCookie.png?7390cf");
+    background-size: contain;
+    cursor: pointer;
+}
+
+#buyplace {
+    background-color: #ffffff;
+}
+
+.buy {
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+#menubuttons {
+    cursor: pointer;
+}
+
+#shop {
+    display:block;
+}
+
+#upgrades {
+    display:none;
+}
+
+#udoubleclick0 {
+    display:none;
+}
+
+#udoubleclick1 {
+    display:none;
+}
+
+#udoubleclick2 {
+    display:none;
+}
+
+#udoublegranny0 {
+    display:none;
+}
+
+#udoublegranny1 {
+    display:none;
+}
+
+#udoublegranny2 {
+    display:none;
+}
+
+#udoublefarm0 {
+    display:none;
+}
+#udoublefarm1 {
+    display:none;
+}
+#udoublefarm2 {
+    display:none;
+}
+
+#udoublemine0 {
+    display:none;
+}
+#udoublemine1 {
+    display:none;
+}
+#udoublemine2 {
+    display:none;
+}

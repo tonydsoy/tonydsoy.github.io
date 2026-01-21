@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!-- tested and working on the nintendo 3DS and firefox browsers -->
+    <meta charset="UTF-8">
+
+    <meta name="description" content="cut down cookie clicker">
+    <meta name="author" content="tonydsoy">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>body {
+    background-color: lightgrey;
+}
+
+#clickcookie {
+    height:2em;
+    width:2em;
+    background-image:url(data:image/png;base64,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);
+    background-size: contain;
+    cursor: pointer;
+}
+
+#buyplace {
+    background-color: #ffffff;
+}
+
+.buy {
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+#menubuttons {
+    cursor: pointer;
+}
+
+#shop {
+    display:block;
+}
+
+#upgrades {
+    display:none;
+}
+
+#udoubleclick0 {
+    display:none;
+}
+
+#udoubleclick1 {
+    display:none;
+}
+
+#udoubleclick2 {
+    display:none;
+}
+
+#udoublegranny0 {
+    display:none;
+}
+
+#udoublegranny1 {
+    display:none;
+}
+
+#udoublegranny2 {
+    display:none;
+}
+
+#udoublefarm0 {
+    display:none;
+}
+#udoublefarm1 {
+    display:none;
+}
+#udoublefarm2 {
+    display:none;
+}
+
+#udoublemine0 {
+    display:none;
+}
+#udoublemine1 {
+    display:none;
+}
+#udoublemine2 {
+    display:none;
+}</style>
+    <script>document.addEventListener('DOMContentLoaded',function() {
+    const htmlcookies = document.getElementById("cookies");
+    const htmlcookiebutton = document.getElementById("clickcookie");
+    const htmlcps = document.getElementById("cps");
+
+    const htmlbuyclickerbutton = document.getElementById("buyclicker");
+    const htmlclickerprices = document.getElementById("clickerprice")
+    const htmlclickers = document.getElementById("clickers")
+
+    const htmlbuygrannybutton = document.getElementById("buygranny");
+    const htmlgrannyprices = document.getElementById("grannyprice")
+    const htmlgrannys = document.getElementById("grannys")
+
+    const htmlbuyfarmbutton = document.getElementById("buyfarm");
+    const htmlfarmprices = document.getElementById("farmprice")
+    const htmlfarms = document.getElementById("farms")
+
+    const htmlbuyminebutton = document.getElementById("buymine");
+    const htmlmineprices = document.getElementById("mineprice")
+    const htmlmines = document.getElementById("mines")
+
+
+    const htmludoubleclick0 = document.getElementById("udoubleclick0");
+    const htmlubuydoubleclick0 = document.getElementById("ubuydoubleclick0");
+
+    const htmludoubleclick1 = document.getElementById("udoubleclick1");
+    const htmlubuydoubleclick1 = document.getElementById("ubuydoubleclick1");
+
+    const htmludoubleclick2 = document.getElementById("udoubleclick2");
+    const htmlubuydoubleclick2 = document.getElementById("ubuydoubleclick2");
+
+    const htmludoublegranny0 = document.getElementById("udoublegranny0");
+    const htmlubuydoublegranny0 = document.getElementById("ubuydoublegranny0");
+
+    const htmludoublegranny1 = document.getElementById("udoublegranny1");
+    const htmlubuydoublegranny1 = document.getElementById("ubuydoublegranny1");
+
+    const htmludoublegranny2 = document.getElementById("udoublegranny2");
+    const htmlubuydoublegranny2 = document.getElementById("ubuydoublegranny2");
+
+    const htmludoublefarm0 = document.getElementById("udoublefarm0");
+    const htmlubuydoublefarm0 = document.getElementById("ubuydoublefarm0");
+
+    const htmludoublefarm1 = document.getElementById("udoublefarm1");
+    const htmlubuydoublefarm1 = document.getElementById("ubuydoublefarm1");
+
+    const htmludoublefarm2 = document.getElementById("udoublefarm2");
+    const htmlubuydoublefarm2 = document.getElementById("ubuydoublefarm2");
+
+    const htmludoublemine0 = document.getElementById("udoublemine0");
+    const htmlubuydoublemine0 = document.getElementById("ubuydoublemine0");
+
+    const htmludoublemine1 = document.getElementById("udoublemine1");
+    const htmlubuydoublemine1 = document.getElementById("ubuydoublemine1");
+
+    const htmludoublemine2 = document.getElementById("udoublemine2");
+    const htmlubuydoublemine2 = document.getElementById("ubuydoublemine2");
+
+    var cps = 1;
+    var cookies = 0.0;
+
+    // switch menus
+
+    var currentmenu = 0;
+    const htmlupgradebutton = document.getElementById("upgrbutton");
+    const htmlshopbutton = document.getElementById("shopbutton");
+    htmlshopbutton.style.textDecoration = "underline";
+
+    const htmlshop = document.getElementById("shop");
+    const htmlupgrades = document.getElementById("upgrades");
+
+    function updatemenu() {
+        if (currentmenu == 0) {
+            htmlupgradebutton.style.textDecoration = "none";
+            htmlshopbutton.style.textDecoration = "underline";
+
+            htmlshop.style.display = "block";
+            htmlupgrades.style.display = "none";
+        } else if (currentmenu == 1) {
+            htmlupgradebutton.style.textDecoration = "underline";
+            htmlshopbutton.style.textDecoration = "none";
+
+            htmlshop.style.display = "none";
+            htmlupgrades.style.display = "block";
+        }
+    }
+
+    htmlupgradebutton.addEventListener("click",function(){
+        currentmenu = 1;
+        updatemenu();
+    })
+
+    htmlshopbutton.addEventListener("click",function(){
+        currentmenu = 0;
+        updatemenu();
+    })
+
+    // i like shopping i like shopping
+
+    var clickers = 0;
+    var clickerprice = 15;
+    var cookiesperclickandauto = 1;
+
+    var clickeru0 = false;
+    var clickeru1 = false;
+    var clickeru2 = false;
+    
+    var grannyu0 = false;
+    var grannyu1 = false;
+    var grannyu2 = false;
+
+    var farmu0 = false;
+    var farmu1 = false;
+    var farmu2 = false;
+
+    var mineu0 = false;
+    var mineu1 = false;
+    var mineu2 = false;
+
+    var grannys = 0;
+    var grannyprice = 100;
+    var grannypower = 1;
+
+    var farms = 0;
+    var farmprice = 1100;
+    var farmpower = 8;
+
+    var mines = 0;
+    var mineprice = 12000;
+    var minepower = 47;
+
+    function getBuildingPrice(baseCost,owned) {
+        var price = baseCost * Math.pow(1.15,owned);
+        return Math.ceil(price);
+    }
+
+    function updateprices() {
+        clickerprice = getBuildingPrice(15,clickers);
+        grannyprice = getBuildingPrice(100,grannys);
+        farmprice = getBuildingPrice(1100,farms);
+        mineprice = getBuildingPrice(12000,mines);
+        cps = (clickers*(cookiesperclickandauto/10))+(grannys*grannypower)+(farms*farmpower)+(mines*minepower);
+        cps = Math.round(cps*10)/10;
+
+        if (clickers == 1) {
+            if (!clickeru0) htmludoubleclick0.style.display = "block";
+            if (!clickeru1) htmludoubleclick1.style.display = "block";
+        }
+        if (clickers == 10) {
+            if (!clickeru2) htmludoubleclick2.style.display = "block";
+        }
+
+        if (grannys == 1) {
+            if (!grannyu0) htmludoublegranny0.style.display = "block";   
+        }
+        if (grannys == 5) {
+            if (!grannyu1) htmludoublegranny1.style.display = "block";
+        }
+        if (grannys == 25) {
+            if (!grannyu2) htmludoublegranny2.style.display = "block";
+        }
+
+        if (farms == 1) {
+            if (!farmu0) htmludoublefarm0.style.display = "block";
+        }
+        if (farms == 5) {
+            if (!farmu1) htmludoublefarm1.style.display = "block";
+        }
+        if (farms == 25) {
+            if (!farmu2) htmludoublefarm2.style.display = "block";
+        }
+
+        if (mines == 1) {
+            if (!mineu0) htmludoublemine0.style.display = "block";
+        }
+        if (mines == 5) {
+            if (!mineu1) htmludoublemine1.style.display = "block";
+        }
+        if (mines == 25) {
+            if (!mineu2) htmludoublemine2.style.display = "block";
+        }
+
+        htmlcps.textContent = cps;
+        htmlcookies.textContent = Math.floor(cookies);
+        htmlclickerprices.textContent = clickerprice;
+        htmlclickers.textContent = clickers;
+
+        htmlgrannyprices.textContent = grannyprice;
+        htmlgrannys.textContent = grannys;
+
+        htmlfarmprices.textContent = farmprice;
+        htmlfarms.textContent = farms;
+
+        htmlmineprices.textContent = mineprice;
+        htmlmines.textContent = mines;
+    }
+
+    function addcookie(howmuch) {
+        cookies += howmuch;
+        updateprices();
+    }
+    
+    htmlcookiebutton.addEventListener("click",function(){
+        addcookie(cookiesperclickandauto);
+    })
+    // buildings
+    htmlbuyclickerbutton.addEventListener("click",function(){
+        if (cookies >= clickerprice) {
+            cookies -= clickerprice;
+            clickers += 1;
+            updateprices();
+        }
+    })
+    
+    htmlbuygrannybutton.addEventListener("click",function(){
+        if (cookies >= grannyprice) {
+            cookies -= grannyprice;
+            grannys += 1;
+            updateprices();
+        }
+    })
+    
+    htmlbuyfarmbutton.addEventListener("click",function(){
+        if (cookies >= farmprice) {
+            cookies -= farmprice;
+            farms += 1;
+            updateprices();
+        }
+    })
+
+    htmlbuyminebutton.addEventListener("click",function(){
+        if (cookies >= mineprice) {
+            cookies -= mineprice;
+            mines += 1;
+            updateprices();
+        }
+    })
+
+    // upgrades
+
+    htmlubuydoubleclick0.addEventListener("click",function(){
+        if (cookies >= 100) {
+            cookies -= 100
+            htmludoubleclick0.style.display = "none";
+            clickeru0 = true;
+            cookiesperclickandauto *= 2;
+            updateprices();
+        }
+    })
+
+    htmlubuydoubleclick1.addEventListener("click",function(){
+        if (cookies >= 500) {
+            cookies -= 500
+            htmludoubleclick1.style.display = "none";
+            clickeru1 = true;
+            cookiesperclickandauto *= 2;
+            updateprices();
+        }
+    })
+
+    htmlubuydoubleclick2.addEventListener("click",function(){
+        if (cookies >= 10000) {
+            cookies -= 10000
+            htmludoubleclick2.style.display = "none";
+            clickeru2 = true;
+            cookiesperclickandauto *= 2;
+            updateprices();
+        }
+    })
+
+    htmlubuydoublegranny0.addEventListener("click",function(){
+        if (cookies >= 1000) {
+            cookies -= 1000
+            htmludoublegranny0.style.display = "none";
+            grannyu0 = true;
+            grannypower *= 2;
+            updateprices();
+        }
+    })
+
+    htmlubuydoublegranny1.addEventListener("click",function(){
+        if (cookies >= 5000) {
+            cookies -= 5000
+            htmludoublegranny1.style.display = "none";
+            grannyu1 = true;
+            grannypower *= 2;
+            updateprices();
+        }
+    })
+
+    htmlubuydoublegranny2.addEventListener("click",function(){
+        if (cookies >= 50000) {
+            cookies -= 50000
+            htmludoublegranny2.style.display = "none";
+            grannyu2 = true;
+            grannypower *= 2;
+            updateprices();
+        }
+    })
+
+    htmlubuydoublefarm0.addEventListener("click",function(){
+        if (cookies >= 11000) {
+            cookies -= 11000
+            htmludoublefarm0.style.display = "none";
+            farmu0 = true;
+            farmpower *= 2;
+            updateprices();
+        }
+    })
+
+    htmlubuydoublefarm1.addEventListener("click",function(){
+        if (cookies >= 55000) {
+            cookies -= 55000
+            htmludoublefarm1.style.display = "none";
+            farmu1 = true;
+            farmpower *= 2;
+            updateprices();
+        }
+    })
+
+    htmlubuydoublefarm2.addEventListener("click",function(){
+        if (cookies >= 550000) {
+            cookies -= 550000
+            htmludoublefarm2.style.display = "none";
+            farmu2 = true;
+            farmpower *= 2;
+            updateprices();
+        }
+    })
+
+    htmlubuydoublemine0.addEventListener("click",function(){
+        if (cookies >= 120000) {
+            cookies -= 120000
+            htmludoublemine0.style.display = "none";
+            mineu0 = true;
+            minepower *= 2;
+            updateprices();
+        }
+        
+    })
+
+    htmlubuydoublemine1.addEventListener("click",function(){
+        if (cookies >= 600000) {
+            cookies -= 600000
+            htmludoublemine1.style.display = "none";
+            mineu1 = true;
+            minepower *= 2;
+            updateprices();
+        }
+    })
+
+    htmlubuydoublemine2.addEventListener("click",function(){
+        if (cookies >= 6000000) {
+            cookies -= 6000000
+            htmludoublemine2.style.display = "none";
+            mineu2 = true;
+            minepower *= 2;
+            updateprices();
+        }
+    })
+
+
+    // cps loop
+    function cpsLoop() {
+        addcookie(cps / 8);
+        setTimeout(cpsLoop, 125);
+    }
+
+    cpsLoop();
+
+})</script>
+    <title>miniclicker</title>
+</head>
+<body>
+    cookies per second = <span id="cps">0</span><br>
+    cookies = <span id="cookies">0</span><br>
+    <div id="clickcookie"></div><br>
+    <div id="buyplace">
+        <span id="menubuttons">
+            <span id="shopbutton">shop</span> <span id="upgrbutton">upgrades</span><br><br>
+        </span>
+        <span id="shop">
+            <span>
+                <span>
+                    <span id="buyclicker" class="buy">buy</span>
+                    clicker for
+                    <span id="clickerprice">15</span>.
+                    <span id="clickers">0</span>x clickers
+                </span>
+            </span><br>
+            <span>
+                <span>
+                    <span id="buygranny" class="buy">buy</span>
+                    granny for
+                    <span id="grannyprice">100</span>.
+                    <span id="grannys">0</span>x grannys
+                </span>
+            </span><br>
+            <span>
+                <span>
+                    <span id="buyfarm" class="buy">buy</span>
+                    farm for
+                    <span id="farmprice">1100</span>.
+                    <span id="farms">0</span>x farms
+                </span>
+            </span><br>
+            <span>
+                <span>
+                    <span id="buymine" class="buy">buy</span>
+                    mine for
+                    <span id="mineprice">12000</span>.
+                    <span id="mines">0</span>x mines
+                </span>
+            </span><br>
+        </span>
+
+        <span id="upgrades">
+            <span id="udoubleclick0">
+                <span id="ubuydoubleclick0" class="buy">buy</span>
+                x2 click/cursor upgrade for 100<br>
+            </span>
+            <span id="udoubleclick1">
+                <span id="ubuydoubleclick1" class="buy">buy</span>
+                x2 click/cursor upgrade for 500<br>
+            </span>
+            <span id="udoubleclick2">
+                <span id="ubuydoubleclick2" class="buy">buy</span>
+                x2 click/cursor upgrade for 10000<br>
+            </span>
+
+            <span id="udoublegranny0">
+                <span id="ubuydoublegranny0" class="buy">buy</span>
+                x2 granny upgrade for 1000<br>
+            </span>
+            <span id="udoublegranny1">
+                <span id="ubuydoublegranny1" class="buy">buy</span>
+                x2 granny upgrade for 5000<br>
+            </span>
+            <span id="udoublegranny2">
+                <span id="ubuydoublegranny2" class="buy">buy</span>
+                x2 granny upgrade for 50000<br>
+            </span>
+
+            <span id="udoublefarm0">
+                <span id="ubuydoublefarm0" class="buy">buy</span>
+                x2 farm upgrade for 11000<br>
+            </span>
+            <span id="udoublefarm1">
+                <span id="ubuydoublefarm1" class="buy">buy</span>
+                x2 farm upgrade for 55000<br>
+            </span>
+            <span id="udoublefarm2">
+                <span id="ubuydoublefarm2" class="buy">buy</span>
+                x2 farm upgrade for 550000<br>
+            </span>
+            
+            <span id="udoublemine0">
+                <span id="ubuydoublemine0" class="buy">buy</span>
+                x2 mine upgrade for 120000<br>
+            </span>
+            <span id="udoublemine1">
+                <span id="ubuydoublemine1" class="buy">buy</span>
+                x2 mine upgrade for 55000<br>
+            </span>
+            <span id="udoublemine2">
+                <span id="ubuydoublemine2" class="buy">buy</span>
+                x2 mine upgrade for 550000<br>
+            </span>
+        </span>
+    </div>
+</body>
+</html>
