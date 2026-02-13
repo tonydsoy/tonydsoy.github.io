@@ -30,6 +30,8 @@ a {
     padding-bottom: 3vh;
 }
 
+/* excuse me github please actually make this one do something*/
+
 .surroundjsbc {
     display:flex; flex-direction: row; align-items: center; justify-content: center; width: 20vw;
 }
