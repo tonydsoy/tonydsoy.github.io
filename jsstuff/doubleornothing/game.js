@@ -31,6 +31,11 @@ button.addEventListener("click", function() {
         return;
     }
 
+    if (bet != Math.abs(bet)) {
+        results.innerHTML = '<span class="redtext">number cannot be negative or zero</span>';
+        return;
+    }
+
     // Proceed with your logic here
     // Example:
     if (bet > score) {
