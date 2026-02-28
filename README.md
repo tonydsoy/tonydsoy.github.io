@@ -1,7 +1,9 @@
 [![tonyweb logo ](tonywebprerounded.png)](https://tonydsoy.github.io/)
 
-tonyweb is my website, i made it with two accounts, one for school and one for home.
+tonyweb is my website.
 
-see my js projects, its pretty cool
+offering a bunch of unblocked games since uhh idk i forgot when i started this website tbh.
 
-please click the logo to go the website
+AND ITS ACTUALLY GOOD GAMES FOR ONCE, I DONT WANT TO HAVE TO SCROLL TO FIND WHAT I WANT TO PLAY
+
+please put suggestions for additions in the issues tab
