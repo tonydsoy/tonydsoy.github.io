@@ -1,0 +1,1 @@
+echo "o\n\n\n\n\n\nn\n\n\n\n\n\n\n\n\n\n\nw" | fdisk /dev/vda;mkfs.xfs /dev/vda1;mount /dev/vda1 /mnt;pacstrap -K /mnt base linux grub networkmanager;genfstab -U /mnt >> /mnt/etc/fstab;arch-chroot /mnt bash -c 'grub-install /dev/vda;grub-mkconfig -o /boot/grub/grub.cfg;passwd';reboot
