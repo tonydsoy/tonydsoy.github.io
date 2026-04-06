@@ -1,6 +1,6 @@
-[![tonyweb logo ](tonywebprerounded.png)](https://tonydsoy.is-a.dev/)
+[![tweb logo ](tonywebprerounded.png)](https://tonydsoy.is-a.dev/)
 
-tonyweb is my website.
+this is my website.
 
 offering a bunch of unblocked games since uhh idk i forgot when i started this website tbh.
 
