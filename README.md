@@ -8,5 +8,5 @@ AND ITS ACTUALLY GOOD GAMES FOR ONCE, I DONT WANT TO HAVE TO SCROLL TO FIND WHAT
 
 please put suggestions for additions in the issues tab
 
-very recently, SMCDSB blocked github.io, unfortunately for them I dont use github.io, I use is-a.dev but i'll give them some credit for at least trying<br>
+recently, SMCDSB blocked github.io, unfortunately for them I dont use github.io, I use is-a.dev but i'll give them some credit for at least trying<br>
 also coolmathgames isn't blocked for some reason
