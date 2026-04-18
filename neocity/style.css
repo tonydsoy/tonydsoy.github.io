@@ -70,14 +70,45 @@ body {
     margin-left:0;
 }
 
+#sidebar-section {
+    border:3px dotted #4fb0c5;
+    padding:5px;
+    margin:10px;
+    margin-top:0;
+}
+
+#sidebar-section div:hover {
+    background:#ffffff;
+}
+
+#sidebar-section div {
+    cursor:pointer;
+}
+
+#sidebar-separator {
+    margin:10px;
+    margin-bottom:5px;
+    border: 2px dashed #4fb0c5;
+    background: #9ddae8;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding:5px;
+    display:flex;
+    justify-content: center;
+}
+
+/* very useful for content styling */
+
 #linklike {
     text-decoration: underline;
     color:rgb(0,0,238);
+    cursor:pointer;
 }
 
 a {
     color: rgb(0,0,238);
     text-decoration: underline;
+    cursor:pointer;
 }
 
 @keyframes becomebig {
@@ -142,27 +173,4 @@ a {
 
 #bgblur {
     backdrop-filter: blur(4px);
-}
-
-#sidebar-section {
-    border:3px dotted #4fb0c5;
-    padding:5px;
-    margin:10px;
-    margin-top:0;
-}
-
-#sidebar-section div:hover {
-    background:#ffffff;
-}
-
-#sidebar-separator {
-    margin:10px;
-    margin-bottom:5px;
-    border: 2px dashed #4fb0c5;
-    background: #9ddae8;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding:5px;
-    display:flex;
-    justify-content: center;
 }
