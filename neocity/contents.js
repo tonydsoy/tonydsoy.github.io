@@ -19,6 +19,10 @@ function changecontent(changeto) {
     })
 }
 
+function changepage(changeto) {
+    window.location.href = changeto;
+}
+
 document.addEventListener("DOMContentLoaded", (event) => {
     const urlsearchparams = new URLSearchParams(window.location.search);
     if (urlsearchparams.get("content") != undefined) {

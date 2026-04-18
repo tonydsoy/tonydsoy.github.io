@@ -129,6 +129,17 @@ a {
     }
 }
 
+#hr {
+    display:flex;
+    justify-content: center;
+}
+
+#hr div {
+    width:70%;
+    height:2px;
+    background-color: #4fb0c5;
+}
+
 #hoverscale {
     animation:becomesmall ease-in-out 1 0.2s;
     display:inline-block;
@@ -147,13 +158,36 @@ a {
     grid-template-columns: 50% 50%;
 }
 
+#center-text {
+    text-align:center;
+}
+
 #split-70-30 {
     display:grid;
     grid-template-columns: 60% 40%;
 }
 
+#bordering2 {
+    border:2px dotted #9ddae8;
+    border-radius: 20px;
+}
+
 #margins-10 {
     margin:10px;
+}
+
+#text-gapper{
+    display:inline-block;
+    margin:5px;
+}
+
+#inline {
+    display:inline-block;
+}
+
+#vertical-align {
+    display:flex;
+    align-items: center;
 }
 
 #margins-20 {
