@@ -1,0 +1,46 @@
+#siterds-alert {
+    position:fixed;
+    width:calc(100vw - 60px);
+    background: #ffffff;
+    color:#000000;
+    display:grid;
+    margin:30px;
+    z-index: 2;
+    font-size:30px;
+    height:100px;
+    grid-template-columns: 85% 15%;
+    border-radius:30px;
+    padding:30px;
+    transform:translateY(calc(100vh - 200px));
+}
+
+#siterds-opts {
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+#siterds-ignore {
+    user-select: none;
+    cursor:pointer;
+    background:#f0f0f0;
+    border:3px #000 solid;
+    height:50px;
+    border-radius: 50px;
+    display:flex;
+    align-items: center;
+    width:fit-content;
+    padding:10px;
+}
+
+#siterds-sure {
+    user-select: none;
+    cursor:pointer;
+    background:#da7a2d;
+    border:3px #000 solid;
+    height:50px;
+    border-radius: 50px;
+    display:flex;
+    align-items: center;
+    width:fit-content;
+    padding:10px;
+}
