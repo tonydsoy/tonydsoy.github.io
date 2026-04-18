@@ -3,12 +3,10 @@
     width:calc(100vw - 60px);
     background: #ffffff;
     color:#000000;
-    display:grid;
     margin:30px;
     z-index: 2;
     font-size:30px;
     height:100px;
-    grid-template-columns: 85% 15%;
     border-radius:30px;
     padding:30px;
     transform:translateY(calc(100vh - 200px));
@@ -16,7 +14,8 @@
 
 #siterds-opts {
     display:grid;
-    grid-template-columns: 50% 50%;
+    float:right;
+    grid-template-columns: 140px 140px;
 }
 
 #siterds-ignore {
