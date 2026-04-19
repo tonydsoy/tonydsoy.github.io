@@ -135,17 +135,6 @@ a {
     }
 }
 
-#hr {
-    display:flex;
-    justify-content: center;
-}
-
-#hr div {
-    width:70%;
-    height:2px;
-    background-color: #4fb0c5;
-}
-
 #hoverscale {
     animation:becomesmall ease-in-out 1 0.2s;
     display:inline-block;

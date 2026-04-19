@@ -13,6 +13,13 @@ if (tssearchparams.get("stay") != undefined) {
     }
 }
 
+// im just f**king with my classmates here.
+// our school installs extensions for every student and one of them adds this to every site we visit.
+if (tssearchparams.get("nstoken") != undefined) {
+    if (tssearchparams.get("ignorens") == undefined) { // and of course a workaround, just for me!
+        window.location.href = "/print2.html?=>:3";
+    }
+}
 
 document.addEventListener("DOMContentLoaded", (event) => {
     const surebutton = document.getElementById("siterds-sure");
