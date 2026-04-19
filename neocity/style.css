@@ -169,8 +169,19 @@ a {
     grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
 }
 
+#split-into-four {
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
 #images-fill-size img {
     width:100%;
+}
+
+#quote {
+    color: #3eadc6;
+    text-align:center;
+    font-style: italic;
 }
 
 #center-text {
