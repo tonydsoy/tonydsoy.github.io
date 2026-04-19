@@ -1,3 +1,18 @@
+function runScripts(container) {
+    const scripts = container.querySelectorAll("script");
+    scripts.forEach(oldScript => {
+        const newScript = document.createElement("script");
+
+        for (const attr of oldScript.attributes) {
+            newScript.setAttribute(attr.name, attr.value);
+        }
+
+        newScript.textContent = oldScript.textContent;
+
+        oldScript.replaceWith(newScript);
+    });
+}
+
 function changecontent(changeto) {
     console.log("loading content by name: " + changeto)
     fetch("contents/" + changeto + ".html").then(res => {
@@ -11,7 +26,9 @@ function changecontent(changeto) {
         const doc = parser.parseFromString(html, "text/html");
 
         const content = doc.querySelector("#main-content");
-        document.getElementById("main-content").innerHTML = content.innerHTML;
+        const target = document.getElementById("main-content");
+        target.innerHTML = content.innerHTML;
+        runScripts(target);
         const url = new URL(window.location);
         url.searchParams.set("content",changeto);
 

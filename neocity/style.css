@@ -98,6 +98,11 @@ body {
     justify-content: center;
 }
 
+#sidebar-text {
+    margin: 10px;
+    margin-top: 0;
+}
+
 /* very useful for content styling */
 
 #linklike {
@@ -159,6 +164,15 @@ a {
     grid-template-columns: 50% 50%;
 }
 
+#split-into-three {
+    display:grid;
+    grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+}
+
+#images-fill-size img {
+    width:100%;
+}
+
 #center-text {
     text-align:center;
 }
@@ -168,6 +182,11 @@ a {
     grid-template-columns: 60% 40%;
 }
 
+#split-80-20 {
+    display:grid;
+    grid-template-columns: 80% 20%;
+}
+
 #bordering2 {
     border:2px dotted #9ddae8;
     border-radius: 20px;
@@ -175,6 +194,10 @@ a {
 
 #margins-10 {
     margin:10px;
+}
+
+#margins-5 {
+    margin:5px;
 }
 
 #text-gapper{
