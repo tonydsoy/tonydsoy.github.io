@@ -32,13 +32,13 @@ body {
     animation-iteration-count: infinite;
 }
 
-#top-signature {
+.top-signature {
     font-family:monospace;
     display:flex;
     justify-content: center;
 }
 
-#middled {
+.middled {
     background: #00000000;
     width:1200px;
     min-width:1200px;
@@ -48,7 +48,7 @@ body {
     grid-template-rows: 160px auto;
 }
 
-#bordering {
+.bordering {
     border: 3px dashed #62ecd7;
 }
 
@@ -59,7 +59,7 @@ body {
     }
 }
 
-#content {
+.content {
     background:#d6f0f0;
     height:100%;
     display:grid;
@@ -112,7 +112,7 @@ body {
 
 /* very useful for content styling */
 
-#linklike {
+.linklike {
     text-decoration: underline;
     color:rgb(0,0,238);
     cursor:pointer;
@@ -142,12 +142,12 @@ a {
     }
 }
 
-#hoverscale {
+.hoverscale {
     animation:becomesmall ease-in-out 1 0.2s;
     display:inline-block;
 }
 
-#hoverscale:hover{
+.hoverscale:hover{
     scale:1.2;
     animation-name: becomebig;
     animation-timing-function: ease-in-out;
@@ -155,78 +155,68 @@ a {
     animation-duration: 0.2s;
 }
 
-#half-n-half {
+.half-n-half {
     display:grid;
     grid-template-columns: 50% 50%;
 }
 
-#split-into-three {
-    display:grid;
-    grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
-}
-
-#split-into-four {
+.split-into-four {
     display:grid;
     grid-template-columns: 25% 25% 25% 25%;
 }
 
-#images-fill-size img {
+.images-fill-size img {
     width:100%;
 }
 
-#quote {
+.quote {
     color: #3eadc6;
     text-align:center;
     font-style: italic;
 }
 
-#center-text {
+.center-text {
     text-align:center;
 }
 
-#split-70-30 {
+.split-70-30 {
     display:grid;
     grid-template-columns: 60% 40%;
 }
 
-#split-80-20 {
+.split-80-20 {
     display:grid;
     grid-template-columns: 80% 20%;
 }
 
-#bordering2 {
+.bordering2 {
     border:2px dotted #9ddae8;
     border-radius: 20px;
 }
 
-#margins-10 {
+.margins-10 {
     margin:10px;
 }
 
-#margins-5 {
+.margins-5 {
     margin:5px;
 }
 
-#text-gapper{
+.padding-10 {
+    padding:10px;
+}
+
+.padding-5 {
+    padding:5px;
+}
+
+.text-gapper{
     display:inline-block;
     margin:5px;
 }
 
-#inline {
+.inline {
     display:inline-block;
-}
-
-#vertical-align {
-    display:flex;
-    align-items: center;
-}
-
-#margins-20 {
-    margin:20px;
-}
-
-#paddings {
-    padding:20px;
 }
 
 .radius10 {
@@ -236,6 +226,6 @@ a {
     border-radius: 5px;
 }
 
-#bgblur {
+.bgblur {
     backdrop-filter: blur(4px);
 }
