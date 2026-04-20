@@ -71,22 +71,29 @@ body {
     margin-left:0;
 }
 
-#sidebar-section {
+.sidebar-section {
     border:3px dotted #4fb0c5;
     padding:5px;
     margin:10px;
     margin-top:0;
 }
 
-#sidebar-section div:hover {
+.sidebar-section div:hover {
     background:#ffffff;
 }
 
-#sidebar-section div {
+.sidebar-section div {
     cursor:pointer;
 }
 
-#sidebar-separator {
+.sidebar-option {
+    cursor:pointer;
+}
+.sidebar-option:hover {
+    background:#ffffff;
+}
+
+.sidebar-separator {
     margin:10px;
     margin-bottom:5px;
     border: 2px dashed #4fb0c5;
@@ -98,7 +105,7 @@ body {
     justify-content: center;
 }
 
-#sidebar-text {
+.sidebar-text {
     margin: 10px;
     margin-top: 0;
 }
