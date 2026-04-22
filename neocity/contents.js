@@ -30,7 +30,7 @@ function changecontent(changeto) {
         target.innerHTML = content.innerHTML;
         runScripts(target);
         const url = new URL(window.location);
-        url.searchParams.set("content",changeto);
+        url.searchParams.set("c",changeto);
 
         history.pushState({}, "", url);
     })
@@ -42,8 +42,8 @@ function changepage(changeto) {
 
 document.addEventListener("DOMContentLoaded", (event) => {
     const urlsearchparams = new URLSearchParams(window.location.search);
-    if (urlsearchparams.get("content") != undefined) {
-        changecontent(urlsearchparams.get("content"));
+    if (urlsearchparams.get("c") != undefined) {
+        changecontent(urlsearchparams.get("c"));
     } else {
         changecontent("homepage");
     }
