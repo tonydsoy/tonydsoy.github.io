@@ -105,6 +105,10 @@ body {
     justify-content: center;
 }
 
+.sidebar-separator-closed {
+    border-radius: 0;
+}
+
 .sidebar-text {
     margin: 10px;
     margin-top: 0;
@@ -155,6 +159,10 @@ a {
     animation-duration: 0.2s;
 }
 
+.white-hover:hover {
+    background:#ffffff;
+}
+
 .half-n-half {
     display:grid;
     grid-template-columns: 50% 50%;
@@ -167,6 +175,10 @@ a {
 
 .images-fill-size img {
     width:100%;
+}
+
+.clickable {
+    cursor:pointer;
 }
 
 .quote {
