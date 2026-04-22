@@ -93,6 +93,7 @@ body {
     background:#ffffff;
 }
 
+
 .sidebar-separator {
     margin:10px;
     margin-bottom:5px;
@@ -112,6 +113,10 @@ body {
 .sidebar-text {
     margin: 10px;
     margin-top: 0;
+}
+
+.display-none {
+    display:none;
 }
 
 /* very useful for content styling */
