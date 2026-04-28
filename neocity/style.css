@@ -164,6 +164,10 @@ a {
     animation-duration: 0.2s;
 }
 
+.pixelart {
+    image-rendering: pixelated;
+}
+
 .white-hover:hover {
     background:#ffffff;
 }
