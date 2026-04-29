@@ -48,3 +48,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         changecontent("homepage");
     }
 })
+
+window.addEventListener("popstate", () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const contentName = urlParams.get("c") || "homepage";
+    changecontent(contentName, false); 
+});
