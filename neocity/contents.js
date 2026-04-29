@@ -37,7 +37,6 @@ function changecontent(changeto) {
 }
 
 function changepage(changeto) {
-    history.pushState({}, "", changeto);
     window.location.href = changeto;
 }
 
