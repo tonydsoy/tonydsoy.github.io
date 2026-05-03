@@ -25,7 +25,7 @@ function changecontent(changeto) {
         const parser = new DOMParser();
         const doc = parser.parseFromString(html, "text/html");
 
-        const content = doc.querySelector("#main-content");
+        const content = doc.getElementById("main-content");
         const target = document.getElementById("main-content");
         target.innerHTML = content.innerHTML;
         runScripts(target);
@@ -48,3 +48,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         changecontent("homepage");
     }
 })
+
+window.addEventListener("popstate", () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const contentName = urlParams.get("c") || "homepage";
+    changecontent(contentName, false); 
+});
