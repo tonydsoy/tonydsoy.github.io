@@ -26,6 +26,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const ignorebutton = document.getElementById("siterds-ignore");
     const siterdsalert = document.getElementById("siterds-alert");
 
+    if (tssearchparams.get("stay") != undefined) {
+        siterdsalert.style.display = "none";
+    }
+
     surebutton.addEventListener("click", function(){
         document.cookie = "redirect=true;path=/;"
         window.location.href = "/neocity/";
