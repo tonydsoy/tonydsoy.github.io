@@ -38,6 +38,14 @@ body {
     justify-content: center;
 }
 
+.inline {
+    display:inline-block;
+}
+
+.float-right {
+    float:right;
+}
+
 .middled {
     background: #00000000;
     width:1200px;
