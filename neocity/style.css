@@ -168,6 +168,12 @@ a {
     image-rendering: pixelated;
 }
 
+.pixelart-inline {
+    image-rendering: pixelated;
+    display:inline-block;
+    transform:translateY(3px);
+}
+
 .white-hover:hover {
     background:#ffffff;
 }
