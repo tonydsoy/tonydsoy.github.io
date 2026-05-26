@@ -32,6 +32,28 @@ body {
     animation-iteration-count: infinite;
 }
 
+code {
+    background-color:#c7f5ff;
+    margin-left:3px;
+    margin-right:3px;
+    padding:1px;
+    padding-left:7px;
+    padding-right:7px;
+    border: #1c6b7d 1px solid;
+    border-radius: 7px;
+}
+
+.key {
+    background:#ffffff;
+    border: #000000 2px solid;
+    padding:1px;
+    padding-right:5px;
+    padding-left:5px;
+    border-radius:6px;
+    margin-left:2px;
+    color:#000000;
+}
+
 .top-signature {
     font-family:monospace;
     display:flex;
