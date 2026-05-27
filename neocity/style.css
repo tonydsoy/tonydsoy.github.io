@@ -82,10 +82,23 @@ code {
     border: 3px dashed #62ecd7;
 }
 
+/* geniunely surprised it let me do this tbh. */
 @media not all and (min-width:1240px) {
     body {
+        display:none;
+    }
+    head {
+        display:block;
+    }
+    head {
         display:flex;
-        justify-content: left;
+        height:100vh;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        align-items:center;
+        justify-content: center;
+    }
+    head::before {
+        content:"this website is best viewed on a computer";
     }
 }
 
