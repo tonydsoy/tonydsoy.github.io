@@ -1,1 +1,0 @@
-made exclusively for 1366x768 or 1366x760

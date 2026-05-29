@@ -1,87 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <!-- does my gpg key work -->
+<head>
+    <!-- home and games icons by Miguel C Balandrano -->
+    <!-- many more icons from https://stuff.splitbrain.org/ico/ -->
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="siterdsalert.css">
-    <script src="print.js"></script>
-    <script src="siterdsalert.js"></script>
-    <link rel="icon" type="image/x-icon" href="/favicon.png">
-    <title>tonyweb</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <script src="contents.js"></script>
+    <script src="separators.js"></script>
+    <title>tony's site</title>
+    <br>
 </head>
 <body>
-    <div id="siterds-alert">
-        <span>This site is being redesigned! If you want to, I can redirect you to the new website from now on.<br> (this action can be undone)</span>
-        <div id="siterds-opts">
-            <div id="siterds-ignore">Ignore</div>
-            <div id="siterds-sure">Sure!</div>
+    <div class="middled">
+        <div class="top-signature">
+            <!--
+            <div class="hoverscale">
+                <pre>
+   __                        __                
+  / /_____  ____  __  ______/ /________  __  __
+ / __/ __ \/ __ \/ / / / __  / ___/ __ \/ / / /
+/ /_/ /_/ / / / / /_/ / /_/ (__  ) /_/ / /_/ / 
+\__/\____/_/ /_/\__, /\__,_/____/\____/\__, /  
+               /____/                 /____/   </pre>
+            </div>-->
+            <img class="hoverscale pixelart" src="graphics/graffiti.png"> 
         </div>
-    </div>
-    <input style="border-radius: 1cap; margin: 8px;" type="image" src="/tonyweb.png">
-    <input class="source" onclick="javascript:window.location.href='https://github.com/tonydsoy/tonydsoy.github.io'" type="image" src="source.png">
-    <div class="sec1">
-        <h1 class="welcometext">tonyweb.</h1>
-        <h2 class="welcomedesc">
-            tonyweb is my website. hello im autis- i mean tony.<br>
-            this site is only for fun and should not be taken seriously
-            <br>
-            I mostly use this website to host games to play at school because they can't block github!
-            <br>
-            recently: miniclicker moved from allstuff to jsstuff
-            <br>
-            i'm made this site to put some web games on and mess around with HTML and CSS. Terms of service is at the bottom of the page
-        </h2>
-    </div>
-    <div class="stuff"></div>
-    <h1 style="text-align: center;">stuff i made</h1>
-    <div class="row">
-    <div class="topleft">
-        <h1 class="stufftext">js stuff</h1>
-        <h2 class="stufftext"><a style="color:rgb(34, 148, 255)" href="jsstuff/">link</a></h2>
-    </div>
-    <div class="topright">
-        <h1 class="stufftext">games</h1>
-        <h2 class="stufftext"><a href="games/" style="color:rgb(34, 148, 255)">link</a></h2>
-    </div></div>
-    <div class="row">
-    <div class="topleft">
-        <h1 class="stufftext">cool pictures</h1>
-        <h2 class="stufftext"><a style="color:rgb(34, 148, 255)" href="pictures/">link</a></h2>
-    </div>
-    <div class="topright">
-        <h1 class="stufftext">redesign</h1>
-        <h2 class="stufftext"><a style="color:rgb(34, 148, 255)" href="neocity/">link</a></h2>
-    </div></div>
-    <div style="text-align: center; margin-top: 1vh; margin-bottom: 4vh;">
-    <a style="font-size: 2em; text-align: center;" href="/allstuff/" class="bottomlink">all stuff</a></div>
-    <div class="bottom">
-        <div class="TOSdiv">
-        <h1 class="TOSText"><a class="bottomlink" href="jokes/terms">Terms of service</a></h1></div>
-        <div class="bmargin">
-            <h2 class="socialtext">social links</h2>
-            <aside class="aside"></aside>
-            <div class="thesocials">
-                <div>discord - <a class="bottomlink">@.def__init__</a></div>
-                <div><span class="asidetext">|</span> youtube - <a class="bottomlink" target="_blank" href="https://www.youtube.com/@tonydsoy">@tonydsoy</a></div>
-                <div><span class="asidetext">|</span> twitter - <a class="bottomlink" target="_blank" href="https://x.com/tonydsoy">@tonydsoy</a></div>
-                <div><span class="asidetext">|</span> twitter - <a class="bottomlink" target="_blank" href="https://x.com/tonydsoy2">@tonydsoy2</a></div>
-                <div><span class="asidetext">|</span> steam - <a class="bottomlink" target="_blank" href="https://steamcommunity.com/id/mushroomkrzi">tonydsoy</a></div>
-                <div><span class="asidetext">|</span> email - <a class="bottomlink" target="_blank" href="mailto:igot.mcdemshoulders69420@gmail.com">igot.mcdemshoulders69420</a></div>
-                <div><span class="asidetext">|</span> minecraft - <a class="bottomlink" target="_blank" href="https://namemc.com/profile/tonydsoy">tonydsoy</a></div>
-                <div><span class="asidetext">|</span> roblox - <a class="bottomlink" target="_blank" href="https://www.roblox.com/users/1563844617">tonydsoy</a></div>
-                <div><span class="asidetext">|</span> xbox - <a class="bottomlink" target="_blank" href="https://www.xbox.com/en-CA/play/user/PGK%20Puppy">PGK Puppy</a></div>
-                <div><span class="asidetext">|</span> epic games - <a class="bottomlink" target="_blank" href="https://store.epicgames.com/en-US/u/e1d22927326f44cd95adef71539f766b">tonydsoy</a></div>
-                <div><span class="asidetext">|</span> github - <a class="bottomlink" target="_blank" href="https://github.com/tonydsoy">tonydsoy</a> - <a class="bottomlink" target="_blank" href="https://github.com/tonydsas">tonydsas</a></div>
+        <div class="bordering radius10">
+            <div class="content radius5">
+                <div>
+                    <div onclick="changecontent('homepage')" class="center-text margins-10 white-hover clickable"><img src="icons/home.png" height="15px" style="transform:translateY(3px)">Home</div>
+                    <div class="sidebar-separator clickable" id="separator-0" sepid="0">Menu!</div>
+                    <div class="sidebar-section" id="separator-0-sec">
+                        <div onclick="changecontent('music')"><img class="pixelart-inline" src="icons/music.png"> My Music</div>
+                        <div onclick="changecontent('resources')"><img class="pixelart-inline" src="icons/folder.png"> My Resources</div>
+                        <div onclick="changecontent('tools')"><img class="pixelart-inline" src="icons/wrench-screwdriver.png"> My Tools</div>
+                        <div onclick="changecontent('guides')"><img class="pixelart-inline" src="icons/doc-info.png"> My Guides</div>
+                    </div>
+                    <div class="sidebar-separator clickable" id="separator-1" sepid="1">
+                        <img src="icons/games.png" height="15px" style="transform:translateY(3px)">
+                        Games
+                    </div>
+                    <div class="sidebar-section" id="separator-1-sec">
+                        <div onclick="changepage('/games/eaglercraft')">Minecraft</div>
+                        <div onclick="changepage('/games/tetris')">Tetris</div>
+                        <div onclick="changepage('/games/slope')">Slope</div>
+                        <div onclick="changepage('/games/xash3d')">Half-life</div>
+                        <div onclick="changepage('/games/fnaf1')">FNAF 1</div>
+                        <div onclick="changepage('/fnaf2-tonyweb')">FNAF 2</div>
+                        <div onclick="changepage('/games/cc')">Cookie Clicker</div>
+                        <div onclick="changepage('/webprboom')">Doom</div>
+                    </div>
+                    <div class="sidebar-text bordering padding-5">
+                        console modding section coming soon!
+                    </div>
+                </div>
+                <div id="main-content"></div>
             </div>
         </div>
     </div>
-</body>
 </html>
-
-
-
-
-
-
-

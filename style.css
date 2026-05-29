@@ -1,274 +1,301 @@
-html {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow-x: hidden;
+@keyframes movingstripesbg {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x:10px;
+    }
 }
 
 body {
-    background-color: rgb(120, 120, 120);
-    color:rgb(220, 220, 220);
     margin:0;
-    overflow-x: hidden;
+    padding:0;
+    height:100vh;
+    font-size:15px;
+    color:#1c6b7d;
+    font-family:"Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background: repeating-linear-gradient(
+        60deg,
+        #a8e4db,
+        #a8e4db 5px,
+        #d4f1ed 5px,
+        #d4f1ed 10px
+    );
+    display:flex;
+    justify-content: center;
+    animation-name: movingstripesbg;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
-.source {
-    border-radius: 1cap;
-    margin: 8px;
-    float: right;
-    margin-right: 1em;
-    height: 44px;
-    overflow-x: hidden;
+code {
+    background-color:#c7f5ff;
+    margin-left:3px;
+    margin-right:3px;
+    padding:1px;
+    padding-left:7px;
+    padding-right:7px;
+    border: #1c6b7d 1px solid;
+    border-radius: 7px;
 }
 
-.stuff {
-    border-color: #ffffff;
-    border-width: 3px;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    border-style: dashed;
+.key {
+    background:#ffffff;
+    border: #000000 2px solid;
+    padding:1px;
+    padding-right:5px;
+    padding-left:5px;
+    border-radius:6px;
+    margin-left:2px;
+    color:#000000;
 }
 
-.available {
-    color:rgb(91, 169, 241);
-    margin-left: 0.7em;
+.top-signature {
+    font-family:monospace;
+    display:flex;
+    justify-content: center;
 }
 
-/*
-@media all and (min-width: 815px) {
-    .bottom {
-        background-color: rgb(36, 35, 35);
-        padding-bottom: 1px;
-        width: 100%;
-        margin: 0;
-        border: 0;
-        border-top: 0.1em;
-        border-style: solid;
-        border-color: rgb(156, 155, 155);
-        z-index: 1;
-        overflow-x: hidden;
-    }
-
-    .bottomlink {
-        color:rgb(34, 148, 255);
-        overflow-x: hidden;
-    }
-    
-    .TOSText {
-        font-size: 8vw;
-        float: left;
-        margin-left: 5%;
-     }
-    
-    .aside {
-        background: #3d3d3d; 
-        margin-top: -2em;
-        margin-left: 75%;
-        width:2px;
-        height: 15em
-    }
-    
-    .bmargin {
-        margin: 1em;
-        text-align: center;
-    }
-
-    .thesocials {
-        margin-left: 75%; margin-top: -14em;
-    }
-
-    .socialtext {
-        margin-left: 75%;
-    }
-}
-
-@media not all and (min-width: 815px) {
-    .bottom {
-        background-color: rgb(36, 35, 35);
-        padding-bottom: 1px;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        border: 0;
-        border-top: 0.1em;
-        border-style: solid;
-        border-color: rgb(156, 155, 155);
-        margin-top: 1em;
-        z-index: 1;
-        overflow-x: hidden;
-    }
-
-    .bottomlink {
-        color:rgb(34, 148, 255);
-        overflow-x: hidden;
-    }
-    
-    .TOSText {
-        font-size: 8vw;
-        text-align: center;
-     }
-    
-    .aside {
-        background: #3d3d3d; 
-        margin-bottom: 0em;
-        width:45%;
-        margin-left: 25%;
-        height: 0.1em;
-        transform: translateY(-4em);
-    }
-    
-    .bmargin {
-        margin: 1em;
-        text-align: center;
-    }
-}*/
-
-.bottom {
-    background-color: rgb(36, 35, 35);
-    padding-bottom: 1px;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    border: 0;
-    border-top: 0.1em;
-    border-style: solid;
-    border-color: rgb(156, 155, 155);
-    margin-top: 1em;
-    z-index: 1;
-    overflow-x: hidden;
-}
-
-.bottomlink {
-    color:rgb(34, 148, 255);
-    overflow-x: hidden;
-}
-
-.TOSText {
-    font-size: 8vw;
-    text-align: center;
-}
-
-.thesocials div {
+.inline {
     display:inline-block;
 }
 
-@media all and (min-width: 815px) {
-    .TOSText {
-        font-size: 4vw;
-        text-align: center;
+.float-right {
+    float:right;
+}
+
+.middled {
+    background: #00000000;
+    width:1200px;
+    min-width:1200px;
+    margin:20px;
+    margin-top:0;
+    display:grid;
+    grid-template-rows: 160px auto;
+}
+
+.bordering {
+    border: 3px dashed #62ecd7;
+}
+
+/* geniunely surprised it let me do this tbh. */
+@media not all and (min-width:1240px) {
+    body {
+        display:none;
+    }
+    head {
+        display:block;
+    }
+    head {
+        display:flex;
+        height:100vh;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        align-items:center;
+        justify-content: center;
+    }
+    head::before {
+        content:"this website is best viewed on a computer";
     }
 }
 
-.asidetext {
-    color: #3d3d3d;;
+.content {
+    background:#d6f0f0;
+    height:100%;
+    display:grid;
+    grid-template-columns: 160px calc(100% - 160px);
 }
 
-.aside {
-    background: #3d3d3d; 
-    margin-bottom: 0em;
-    width:45%;
-    margin-left: 25%;
-    height: 0.1em;
-    transform: translateY(-4em);
+#main-content {
+    margin:20px;
+    margin-left:0;
 }
 
-.bmargin {
-    margin: 1em;
-    text-align: center;
+.sidebar-section {
+    border:3px dotted #4fb0c5;
+    padding:5px;
+    margin:10px;
+    margin-top:0;
 }
 
-@media not all and (min-width: 1215px) {
-    .welcometext {
-        text-align: center;
-        margin-bottom: 1em;
-    }
-
-    .welcomedesc {
-        text-align: center;
-        margin-top: -1em;
-        margin-bottom: 1em;
-    }
-
-    .sec1 {
-        color: rgb(223, 220, 220);
-        background-color: rgb(97,97,97);
-        margin:8px;
-        margin-top: 6em;
-        border-radius: 5cap;
-        padding-top: 0.001em;
-        padding-left: 1em;
-        padding-bottom: 1em;
-    }
+.sidebar-section div:hover {
+    background:#ffffff;
 }
 
-@media all and (min-width: 1215px) {
-    .welcometext {
-        transform:translate(3em, 4em);
-        max-width: 140px;
-    }
-    
-    .welcomedesc {
-        text-align: center;
-        width:60%;
-        margin-left: 20%;
-        margin-top: -1em;
-        margin-bottom: 1em;
-    }
-
-    .sec1 {
-        color: rgb(223, 220, 220);
-        background-color: rgb(97,97,97);
-        margin:8px;
-        margin-top: 6em;
-        border-radius: 5cap;
-        padding-top: 0em;
-        padding-left: 1em;
-        padding-bottom: 1em;
-    }
+.sidebar-section div {
+    cursor:pointer;
 }
 
-.row {
+.sidebar-option {
+    cursor:pointer;
+}
+.sidebar-option:hover {
+    background:#ffffff;
+}
+
+
+.sidebar-separator {
+    margin:10px;
+    margin-bottom:5px;
+    border: 2px dashed #4fb0c5;
+    background: #9ddae8;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding:5px;
     display:flex;
-    flex-direction: row;
+    justify-content: center;
 }
 
-.topleft {
-    background-color: rgb(97,97,97);
-    border-radius: 4cap;
-    margin:8px;
-    width:50%;
-    padding-top: 0.5vh;
-    padding-left: 2vw;
-    padding-bottom: 7vh;
-}
-    
-.topright {
-    background-color: rgb(97,97,97);
-    border-radius: 4cap;
-    margin:8px;
-    width:50%;
-    padding-top: 0.5vh;
-    padding-left: 2vw;
-    padding-bottom: 7vh;
+.sidebar-separator-closed {
+    border-radius: 0;
 }
 
-@media not all and (min-width:815px) {
-    .row {
-        flex-direction: column;
+.sidebar-text {
+    margin: 10px;
+    margin-top: 0;
+}
+
+.display-none {
+    display:none;
+}
+
+/* very useful for content styling */
+
+.linklike {
+    text-decoration: underline;
+    color:rgb(0,0,238);
+    cursor:pointer;
+}
+
+a {
+    color: rgb(0,0,238);
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+@keyframes becomebig {
+    0% {
+        scale:1;
     }
-    
-    .topleft {
-        width:auto;
-        text-align: center;
-    }
-    
-    .topright {
-        width:auto;
-        text-align: center;
+    100% {
+        scale:1.2;
     }
 }
 
-
-@media not (min-width:609px) {
-    .stufftext {
-        font-size: 6vw;
+@keyframes becomesmall {
+    0% {
+        scale:1.2;
     }
+    100% {
+        scale:1;
+    }
+}
+
+.hoverscale {
+    animation:becomesmall ease-in-out 1 0.2s;
+    display:inline-block;
+}
+
+.hoverscale:hover{
+    scale:1.2;
+    animation-name: becomebig;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 0.2s;
+}
+
+.pixelart {
+    image-rendering: pixelated;
+}
+
+.pixelart-inline {
+    image-rendering: pixelated;
+    display:inline-block;
+    transform:translateY(3px);
+}
+
+.white-hover:hover {
+    background:#ffffff;
+}
+
+.half-n-half {
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+.split-into-four {
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.images-fill-size img {
+    width:100%;
+}
+
+.clickable {
+    cursor:pointer;
+}
+
+.quote {
+    color: #3eadc6;
+    text-align:center;
+    font-style: italic;
+}
+
+.center-text {
+    text-align:center;
+}
+
+.split-70-30 {
+    display:grid;
+    grid-template-columns: 60% 40%;
+}
+
+.split-80-20 {
+    display:grid;
+    grid-template-columns: 80% 20%;
+}
+
+.bordering2 {
+    border:2px dotted #9ddae8;
+    border-radius: 20px;
+}
+
+.margins-10 {
+    margin:10px;
+}
+
+.margins-5 {
+    margin:5px;
+}
+
+.padding-10 {
+    padding:10px;
+}
+
+.padding-5 {
+    padding:5px;
+}
+
+.text-gapper{
+    display:inline-block;
+    margin:5px;
+}
+
+.inline {
+    display:inline-block;
+}
+
+.radius10 {
+    border-radius: 10px;
+}
+.radius5 {
+    border-radius: 5px;
+}
+
+.bgblur {
+    backdrop-filter: blur(4px);
 }
