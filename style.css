@@ -8,9 +8,10 @@
 }
 
 body {
+    height:100vh;
     margin:0;
     padding:0;
-    height:100vh;
+    width:100vw;
     font-size:15px;
     color:#1c6b7d;
     font-family:"Pixelify Sans", sans-serif;
@@ -30,6 +31,14 @@ body {
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+}
+
+body:has(#invert-colors:checked) {
+    backdrop-filter:invert(100%);
+}
+
+#invert-colors:checked ~ .middled {
+    filter: invert(100%);
 }
 
 code {
