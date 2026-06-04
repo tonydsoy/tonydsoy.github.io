@@ -185,6 +185,12 @@ a {
     cursor:pointer;
 }
 
+.hidden-a {
+    color: #1c6b7d;
+    text-decoration:none;
+    cursor:none;
+}
+
 @keyframes becomebig {
     0% {
         scale:1;
