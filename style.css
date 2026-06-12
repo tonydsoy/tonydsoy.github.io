@@ -11,6 +11,7 @@ body {
     margin:0;
     padding:0;
     width:100vw;
+    min-height:100vh;
     font-size:15px;
     color:#1c6b7d;
     font-family:"Pixelify Sans", sans-serif;
@@ -79,6 +80,7 @@ code {
 .middled {
     background: #00000000;
     width:1200px;
+    height:fit-content;
     min-width:1200px;
     margin:20px;
     margin-top:0;
