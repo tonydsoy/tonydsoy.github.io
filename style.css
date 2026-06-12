@@ -145,6 +145,11 @@ code {
     background:#ffffff;
 }
 
+h2 {
+    margin-bottom:0;
+}
+
+
 
 .sidebar-separator {
     margin:10px;
