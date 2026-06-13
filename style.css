@@ -186,11 +186,6 @@ h2 {
     cursor:pointer;
 }
 
-a {
-    color: rgb(0,0,238);
-    text-decoration: underline;
-    cursor:pointer;
-}
 
 .hidden-a {
     color: #1c6b7d;
@@ -227,6 +222,12 @@ a {
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-duration: 0.2s;
+}
+
+a {
+    color: rgb(0,0,238);
+    text-decoration: underline;
+    cursor:pointer;
 }
 
 .pixelart {
