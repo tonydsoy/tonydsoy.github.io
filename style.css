@@ -230,6 +230,23 @@ a {
     cursor:pointer;
 }
 
+#main-content a {
+    animation:becomesmall ease-in-out 1 0.2s;
+    display:inline-block;
+    z-index:1;
+    backdrop-filter: blur(4px);
+
+}
+
+#main-content a:hover {
+    scale:1.2;
+    z-index:2;
+    animation-name: becomebig;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 0.2s;
+}
+
 .pixelart {
     image-rendering: pixelated;
 }

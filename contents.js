@@ -27,10 +27,12 @@ function changecontent(changeto) {
 
         const content = doc.getElementById("main-content");
         const target = document.getElementById("main-content");
+
         target.innerHTML = content.innerHTML;
-        runScripts(target);
+
+        runScripts(content);
         const url = new URL(window.location);
-        url.searchParams.set("c",changeto);
+        url.searchParams.set("c", changeto);
 
         history.pushState({}, "", url);
     })
@@ -52,5 +54,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
 window.addEventListener("popstate", () => {
     const urlParams = new URLSearchParams(window.location.search);
     const contentName = urlParams.get("c") || "homepage";
-    changecontent(contentName, false); 
+    changecontent(contentName, false);
 });
