@@ -1,15 +1,20 @@
 function runScripts(container) {
     const scripts = container.querySelectorAll("script");
+
     scripts.forEach(oldScript => {
         const newScript = document.createElement("script");
 
+        // Copy attributes (src, type, defer, etc.)
         for (const attr of oldScript.attributes) {
             newScript.setAttribute(attr.name, attr.value);
         }
 
-        newScript.textContent = oldScript.textContent;
+        // Inline script contents
+        if (!oldScript.src) {
+            newScript.textContent = oldScript.textContent;
+        }
 
-        oldScript.replaceWith(newScript);
+        oldScript.parentNode.replaceChild(newScript, oldScript);
     });
 }
 
@@ -30,7 +35,7 @@ function changecontent(changeto) {
 
         target.innerHTML = content.innerHTML;
 
-        runScripts(content);
+        runScripts(target);
         const url = new URL(window.location);
         url.searchParams.set("c", changeto);
 

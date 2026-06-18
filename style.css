@@ -339,3 +339,26 @@ a {
 .bgblur {
     backdrop-filter: blur(4px);
 }
+
+#popup-close {
+    height:32px;
+    float:right;
+    width:32px;
+    image-rendering:pixelated;
+}
+
+#popup-content {
+    width:100vw;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.popup-bg {
+    width:100vw;
+    height:100vh;
+    background-color:#000000aa;
+    position:absolute;
+    z-index:2;
+}
