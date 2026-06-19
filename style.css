@@ -3,7 +3,7 @@
         background-position-x: 0px;
     }
     100% {
-        background-position-x:10px;
+        background-position-x: calc(2.222222222 * 100vh * -1);
     }
 }
 
@@ -15,30 +15,34 @@ body {
     font-size:15px;
     color:#1c6b7d;
     font-family:"Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    background: repeating-linear-gradient(
-        60deg,
-        #a8e4db,
-        #a8e4db 5px,
-        #d4f1ed 5px,
-        #d4f1ed 10px
-    );
     display:flex;
     justify-content: center;
-    animation-name: movingstripesbg;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
 }
 
-body:has(#invert-colors:checked) {
-    backdrop-filter:invert(100%);
+.body-background {
+    background: url("graphics/ocean.png");
+    height:100vh;
+    position:fixed;
+    z-index:1;
+    image-rendering:pixelated;
+    background-size:auto 100vh;
+    width:100vw;
+    animation-name:movingstripesbg;
+    animation-duration:30s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
 }
 
 #invert-colors:checked ~ .middled {
     filter: invert(100%);
+}
+
+#invert-colors:checked ~ .body-background div {
+    height:100vh;
+    width:100vw;
+    backdrop-filter:invert(1);
 }
 
 code {
@@ -83,6 +87,7 @@ code {
     height:fit-content;
     min-width:1200px;
     margin:20px;
+    z-index:2;
     margin-top:0;
     display:grid;
     grid-template-rows: 160px auto;
