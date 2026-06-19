@@ -344,7 +344,14 @@ a {
     height:32px;
     float:right;
     width:32px;
+    margin-right:10px;
+    margin-top:10px;
+    cursor:pointer;
     image-rendering:pixelated;
+}
+
+#popup-close:hover {
+    scale:1.2;
 }
 
 #popup-content {

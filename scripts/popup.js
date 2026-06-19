@@ -1,11 +1,24 @@
-// <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=tEptUntPHycvyMgL&amp;list=PLHovnlOusNLiJz3sm0d5i2Evwa2LDLdrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 let popupactions = document.getElementsByClassName("popup-action");
-
+console.log("sup");
 for (let button of popupactions) {
     button.addEventListener("click", () => {
+        const body = document.getElementsByTagName("body")[0];
+        body.insertAdjacentHTML(
+            "afterbegin",
+            "<div class='popup-bg'><img id='popup-close' src='graphics/cancel.png'><div id='popup-content'></div></div>"
+        );
+
         let popuptype = "none";
+        let popupdata = "none";
         for (const attr of button.attributes) {
             if (attr.name == "popup-type") popuptype = attr.value;
+            if (attr.name == "popup-data") popupdata = attr.value;
         }
+        if (popuptype == "data") {
+            document.getElementById("popup-content").innerHTML = popupdata;
+        }
+        document.getElementById("popup-close").addEventListener("click", () => {
+            body.getElementsByClassName("popup-bg")[0].remove();
+        })
     })
 }
