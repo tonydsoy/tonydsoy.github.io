@@ -1,5 +1,5 @@
-let popupactions = document.getElementsByClassName("popup-action");
-console.log("sup");
+popupactions = document.getElementsByClassName("popup-action");
+
 for (let button of popupactions) {
     button.addEventListener("click", () => {
         const body = document.getElementsByTagName("body")[0];
