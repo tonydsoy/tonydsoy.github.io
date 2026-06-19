@@ -238,7 +238,6 @@ a {
 #main-content a {
     animation:becomesmall ease-in-out 1 0.2s;
     display:inline-block;
-    z-index:1;
     backdrop-filter: blur(4px);
 
 }
@@ -372,5 +371,5 @@ a {
     height:100vh;
     background-color:#000000aa;
     position:fixed;
-    z-index:2;
+    z-index:3;
 }
