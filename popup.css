@@ -1,0 +1,29 @@
+#popup-close {
+    height:32px;
+    float:right;
+    width:32px;
+    margin-right:10px;
+    margin-top:10px;
+    cursor:pointer;
+    image-rendering:pixelated;
+}
+
+#popup-close:hover {
+    scale:1.2;
+}
+
+#popup-content {
+    width:100vw;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.popup-bg {
+    width:100vw;
+    height:100vh;
+    background-color:#000000aa;
+    position:fixed;
+    z-index:3;
+}
