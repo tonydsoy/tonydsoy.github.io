@@ -1,17 +1,6 @@
 window.invertcolors = {};
 invertcolors.inverted = false;
 
-function getCookie(cName) {
-    const name = cName + "=";
-    const cDecoded = decodeURIComponent(document.cookie);
-    const cArr = cDecoded.split('; ');
-    let res;
-    cArr.forEach(val => {
-        if (val.indexOf(name) === 0) res = val.substring(name.length);
-    })
-    return res
-}
-
 invertcolors.invertReminder = function () {
     if (invertcolors.inverted == true) {
         document.querySelector(".middled").style.filter = "invert(1)";
