@@ -35,13 +35,21 @@ body {
     animation-iteration-count:infinite;
 }
 
+.tr-buttons {
+    float:right;
+    border: 3px dashed #62ecd7;
+    z-index: 3;
+    background:;
+}
+
 #invert-colors:checked ~ .middled {
     filter: invert(100%);
 }
 
-#invert-colors:checked ~ .body-background div {
+#invert-colors:checked ~ .body-background > .body-background-inverter {
     height:100vh;
     width:100vw;
+    z-index:2;
     backdrop-filter:invert(1);
 }
 
