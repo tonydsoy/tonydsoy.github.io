@@ -41,6 +41,34 @@ body {
     position:fixed;
 }
 
+#modifiers {
+    position:fixed;
+    z-index:2;
+    width:100%;
+}
+
+.modifiers-right {
+    width:48px;
+    margin-top:10px;
+    margin-right:10px;
+    /*background-color:#d6f0f0;*/
+    height:40px;
+    float:right;
+}
+
+.mod-content {
+    background:#d6f0f0;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+.height-max {
+    height:100%;
+}
+
 .top-signature {
     font-family:monospace;
     display:flex;

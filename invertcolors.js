@@ -5,9 +5,11 @@ invertcolors.invertReminder = function () {
     if (invertcolors.inverted == true) {
         document.querySelector(".middled").style.filter = "invert(1)";
         document.getElementById("bb-invert").style.backdropFilter = "invert(1)";
+        document.getElementById("modifiers").style.filter = "invert(1)";
     } else {
         document.querySelector(".middled").style.filter = "invert(0)";
         document.getElementById("bb-invert").style.backdropFilter = "invert(0)";
+        document.getElementById("modifiers").style.filter = "invert(0)";
     }
 
 }
