@@ -43,6 +43,9 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             invertcolors.inverted = true;
         }
+    } else {
+        invertcolors.inverted = false;
+        document.cookie = "inverted=false";
     }
     invertcolors.invertReminder();
 })
