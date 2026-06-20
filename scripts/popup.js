@@ -5,8 +5,12 @@ for (let button of popupactions) {
         const body = document.getElementsByTagName("body")[0];
         body.insertAdjacentHTML(
             "afterbegin",
-            "<div class='popup-bg'><img id='popup-close' src='graphics/cancel.png'><div id='popup-content'></div></div>"
+            "<div class='popup-bg' id='popup-bg'><img id='popup-close' src='graphics/cancel.png'><div id='popup-content'></div></div>"
         );
+        if (invertcolors.inverted == true) {
+            document.getElementById("popup-bg").style.backdropFilter = "invert(1)";
+            document.getElementById("popup-bg").style.filter = "invert(1)";
+        }
 
         let popuptype = "none";
         let popupdata = "none";
@@ -18,7 +22,7 @@ for (let button of popupactions) {
             document.getElementById("popup-content").innerHTML = popupdata;
         }
         document.getElementById("popup-close").addEventListener("click", () => {
-            body.getElementsByClassName("popup-bg")[0].remove();
+            document.getElementById("popup-bg").remove();
         })
     })
 }
