@@ -175,6 +175,11 @@ h2 {
     margin-top: 0;
 }
 
+.width-full {
+    display:block;
+    width:100%;
+}
+
 .display-none {
     display:none;
 }
@@ -191,7 +196,7 @@ h2 {
 .hidden-a {
     color: #1c6b7d;
     text-decoration:none;
-    cursor:none;
+    cursor:pointer;
 }
 
 @keyframes becomebig {
