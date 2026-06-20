@@ -18,13 +18,13 @@
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <script src="contents.js"></script>
     <script src="separators.js"></script>
+    <script src="invertcolors.js"></script>
     <title>tony's site</title>
     <br>
 </head>
 <body> 
-    <input type="checkbox" name="invert-colors" id="invert-colors" hidden>
     <div class="body-background">
-        <div class="body-background-inverter"></div>
+        <div id="bb-invert"></div>
     </div>
     <div class="middled">
         <div class="top-signature">
@@ -63,7 +63,7 @@
                         console modding section coming soon!
                     </div>
                     <div class="sidebar-section" id="separator-1-sec">
-                        <label for="invert-colors"><div>invert colors</div></label>
+                        <div onclick="invertcolors.invert()">invert colors</div>
                     </div>
                 </div>
                 <div id="main-content"></div>
