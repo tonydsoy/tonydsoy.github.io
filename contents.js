@@ -61,7 +61,7 @@ function changepage(changeto) {
     window.location.href = changeto;
 }
 
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", () => {
     const urlsearchparams = new URLSearchParams(window.location.search);
     if (urlsearchparams.get("c") != undefined) {
         changecontent(urlsearchparams.get("c"));

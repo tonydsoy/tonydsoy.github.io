@@ -1,9 +1,9 @@
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", () => {
     let sidebarSections = 0;
-    for (;;) {
+    for (; ;) {
         const sidebarSeparator = document.getElementById("separator-" + sidebarSections);
         if (sidebarSeparator != undefined) {
-            sidebarSeparator.addEventListener("click", function() {
+            sidebarSeparator.addEventListener("click", function () {
                 let sepid = sidebarSeparator.getAttribute("sepid");
                 if (!sidebarSeparator.classList.contains("sidebar-separator-closed")) {
                     // close
