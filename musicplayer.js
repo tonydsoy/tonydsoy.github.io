@@ -40,17 +40,18 @@ document.addEventListener("DOMContentLoaded", () => {
             musicplayer.song += 1;
         }
     })
+    if (getCookie("musicplayer.autoplay") == "true") {
+        let donebody = false;
+        document.getElementsByTagName("body")[0].addEventListener("click", () => {
+            if (donebody == false) {
+                musicplayer.playing = true;
+                musicplayerDOM.play();
+                pauseplay.textContent = "⏸"
+            }
+            donebody = true;
+        })
+    }
 
-    let donebody = false;
-    document.getElementsByTagName("body")[0].addEventListener("click", () => {
-        if (donebody == false) {
-            musicplayer.playing = true;
-            musicplayerDOM.play();
-            pauseplay.textContent = "⏸"
-        }
-
-        donebody = true;
-    })
 
     pauseplay.addEventListener("click", () => {
         if (musicplayer.playing == true) {

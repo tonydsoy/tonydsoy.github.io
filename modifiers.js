@@ -17,19 +17,19 @@ invertcolors.invertReminder = function () {
 
 invertcolors.invert = function () {
     if (invertcolors.inverted == false) {
-        document.cookie = "inverted=true";
+        document.cookie = "invertcolors.inverted=true";
         invertcolors.inverted = true;
         invertcolors.invertReminder();
     } else {
-        document.cookie = "inverted=false";
+        document.cookie = "invertcolors.inverted=false";
         invertcolors.inverted = false;
         invertcolors.invertReminder();
     }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    if (getCookie("inverted") != undefined) {
-        const inverted = getCookie("inverted");
+    if (getCookie("invertcolors.inverted") != undefined) {
+        const inverted = getCookie("invertcolors.inverted");
         if (inverted == "false") {
             invertcolors.inverted = false;
         } else {
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     } else {
         invertcolors.inverted = false;
-        document.cookie = "inverted=false";
+        document.cookie = "invertcolors.inverted=false";
     }
     invertcolors.invertReminder();
 })
