@@ -23,6 +23,7 @@
     <script src="contents.js"></script>
     <script src="separators.js"></script>
     <script src="modifiers.js"></script>
+    <script src="musicplayer.js"></script>
     <title>tony's site</title>
     <br>
 </head>
@@ -74,6 +75,17 @@
                     </div>
                     <div class="sidebar-text bordering padding-5">
                         this site is open-source! heres the <a href="https://github.com/tonydsoy/tonydsoy.github.io">repo!</a>.
+                    </div>
+                    <div class="sidebar-text bordering padding-5">
+                        <audio id="music-player" src="sounds/music/1. hesitation [fj7MHkCgGxk].webm.mp3"></audio>
+                        <div id="music-playing" class="center-text">
+                            <span id="music-text">1. hesitation [fj7MHkCgGxk].webm.mp3</span>
+                        </div>
+                        <div class="clickable" id="music-controls">
+                            <span id="prev-song">⏮</span>
+                            <span id="pauseplay">▶</span>
+                            <span id="next-song">⏭</span>
+                        </div>
                     </div>
                     <img width="160px" src="graphics/テトリス-重音テト.gif">
                 </div>

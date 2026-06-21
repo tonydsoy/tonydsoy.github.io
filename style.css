@@ -75,6 +75,40 @@ body {
     justify-content: center;
 }
 
+#music-controls {
+    display:grid;
+    grid-template-columns:auto auto auto;
+}
+
+#music-controls span {
+    display:flex;
+    justify-content:center;
+}
+
+#music-playing {
+    text-overflow:clip;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform:translateX(-100%);
+    }
+}
+
+#music-playing span {
+    display:inline-block;
+    padding-left:100%;
+    animation-name:marquee;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-duration:5s;
+}
+
 .middled {
     background: #00000000;
     width:1200px;

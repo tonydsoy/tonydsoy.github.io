@@ -1,3 +1,4 @@
+// invert colors
 window.invertcolors = {};
 invertcolors.inverted = false;
 
