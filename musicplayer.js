@@ -40,6 +40,11 @@ document.addEventListener("DOMContentLoaded", () => {
             musicplayer.song += 1;
         }
     })
+
+    if (getCookie("musicplayer.autoplay") == undefined) {
+        document.cookie = "musicplayer.autoplay=true";
+    }
+
     if (getCookie("musicplayer.autoplay") == "true") {
         let donebody = false;
         document.getElementsByTagName("body")[0].addEventListener("click", () => {
