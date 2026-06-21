@@ -24,9 +24,11 @@ musicplayer.loadNewSong = function (index, autoplay) {
     if (autoplay) {
         musicplayerDOM.play();
         musicplayer.playing = true;
+        window.onbeforeunload = function () { return "music is still playing!" };
         pauseplay.textContent = "⏸";
     } else {
         musicplayerDOM.pause();
+        window.onbeforeunload = null;
         musicplayer.playing = false;
         pauseplay.textContent = "▶";
     }
@@ -65,6 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 musicplayer.playing = true;
                 musicplayerDOM.play();
                 pauseplay.textContent = "⏸"
+                window.onbeforeunload = function () { return "music is still playing!" };
             }
             donebody = true;
         })
@@ -76,10 +79,12 @@ document.addEventListener("DOMContentLoaded", () => {
             musicplayer.playing = false;
             musicplayerDOM.pause();
             pauseplay.textContent = "▶"
+            window.onbeforeunload = null;
         } else {
             musicplayer.playing = true;
             musicplayerDOM.play();
             pauseplay.textContent = "⏸"
+            window.onbeforeunload = function () { return "music is still playing!" };
         }
     })
 
