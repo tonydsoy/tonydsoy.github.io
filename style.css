@@ -51,9 +51,9 @@ body {
     width:48px;
     margin-top:10px;
     margin-right:10px;
+    float:right;
     /*background-color:#d6f0f0;*/
     height:40px;
-    float:right;
 }
 
 .mod-content {
