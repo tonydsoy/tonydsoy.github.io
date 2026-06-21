@@ -41,6 +41,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })
 
+    let donebody = false;
+    document.getElementsByTagName("body")[0].addEventListener("click", () => {
+        if (donebody == false) {
+            musicplayer.playing = true;
+            musicplayerDOM.play();
+            pauseplay.textContent = "⏸"
+        }
+
+        donebody = true;
+    })
+
     pauseplay.addEventListener("click", () => {
         if (musicplayer.playing == true) {
             musicplayer.playing = false;
