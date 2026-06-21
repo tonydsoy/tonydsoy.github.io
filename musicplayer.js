@@ -4,8 +4,8 @@ musicplayer.playing = false;
 musicplayer.song = 0;
 
 musicplayer.getSongFile = function (include, index) {
-    let songs = ["1. hesitation [fj7MHkCgGxk].webm.mp3", "2. Online Lobby [HkNSxhzNgW0].webm.mp3", "3. meaningful love (instrumental) [A_IlqfBhhKU].webm.mp3",
-        "4. resonance (midwest emo version) [LdVtUo-xngw].webm.mp3", "5. Credits Song for My Death [lrXADTo3AeI].webm.mp3", "6. caffeine rush [mYU9dTyDUnY].webm.mp3"];
+    let songs = ["1. hesitation [fj7MHkCgGxk].webm.mp3", "2. strangers [4oRlbl8UqL8].webm.mp3", "3. glasswork corrosion [vLryRtBfWQA].webm.mp3",
+        "4. Sunshower [_u58MXgRjGQ].webm.mp3", "5. Sweden [5w3rRFWzjcM].webm.mp3", "6. cogito, ergo sum [O9lUFztehfY].webm.mp3"];
     if (include) {
         return "sounds/music/" + songs[index];
     } else {
