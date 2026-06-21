@@ -18,6 +18,19 @@ function runScripts(container) {
     });
 }
 
+function fixhref(container) {
+    const hrefs = container.querySelectorAll("a");
+    hrefs.forEach(href => {
+        if (href.getAttribute("href") != undefined) {
+            if (href.getAttribute("href").startsWith("?c=")) {
+                let oldhref = href.getAttribute("href");
+                href.removeAttribute("href");
+                href.setAttribute("onclick", "changecontent('" + oldhref.slice(3) + "')");
+            }
+        }
+    })
+}
+
 function changecontent(changeto) {
     console.log("loading content by name: " + changeto)
     fetch("contents/" + changeto + ".html").then(res => {
@@ -36,6 +49,7 @@ function changecontent(changeto) {
         target.innerHTML = content.innerHTML;
 
         runScripts(target);
+        fixhref(target);
         const url = new URL(window.location);
         url.searchParams.set("c", changeto);
 
