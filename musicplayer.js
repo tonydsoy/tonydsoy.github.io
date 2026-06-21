@@ -13,18 +13,33 @@ musicplayer.getSongFile = function (include, index) {
     }
 }
 
-musicplayer.loadNewSong = function (index) {
+musicplayer.loadNewSong = function (index, autoplay) {
     const playingsong = document.getElementById("music-text");
     const pauseplay = document.getElementById("pauseplay");
     const musicplayerDOM = document.getElementById("music-player");
+    musicplayer.song = index;
+    document.cookie = "musicplayer.currentSong=" + index;
     playingsong.textContent = musicplayer.getSongFile(false, index);
     musicplayerDOM.setAttribute("src", musicplayer.getSongFile(true, index));
-    musicplayerDOM.play();
-    musicplayer.playing = true;
-    pauseplay.textContent = "⏸";
+    if (autoplay) {
+        musicplayerDOM.play();
+        musicplayer.playing = true;
+        pauseplay.textContent = "⏸";
+    } else {
+        musicplayerDOM.pause();
+        musicplayer.playing = false;
+        pauseplay.textContent = "▶";
+    }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+
+    if (getCookie("musicplayer.currentSong") == undefined) {
+        document.cookie = "musicplayer.currentSong=0";
+    }
+
+    musicplayer.loadNewSong(Number(getCookie("musicplayer.currentSong")), false);
+
     const pauseplay = document.getElementById("pauseplay");
     const prevsong = document.getElementById("prev-song");
     const nextsong = document.getElementById("next-song");
@@ -34,10 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
     musicplayerDOM.addEventListener("ended", () => {
         if (musicplayer.song == 5) {
             musicplayer.loadNewSong(0);
-            musicplayer.song = 0;
         } else {
             musicplayer.loadNewSong(musicplayer.song + 1);
-            musicplayer.song += 1;
         }
     })
 
@@ -72,21 +85,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     prevsong.addEventListener("click", () => {
         if (musicplayer.song == 0) {
-            musicplayer.loadNewSong(5);
-            musicplayer.song = 5;
+            musicplayer.loadNewSong(5, true);
         } else {
-            musicplayer.loadNewSong(musicplayer.song - 1);
-            musicplayer.song -= 1;
+            musicplayer.loadNewSong(musicplayer.song - 1, true);
         }
     })
 
     nextsong.addEventListener("click", () => {
         if (musicplayer.song == 5) {
-            musicplayer.loadNewSong(0);
-            musicplayer.song = 0;
+            musicplayer.loadNewSong(0, true);
         } else {
-            musicplayer.loadNewSong(musicplayer.song + 1);
-            musicplayer.song += 1;
+            musicplayer.loadNewSong(musicplayer.song + 1, true);
         }
     })
 })
