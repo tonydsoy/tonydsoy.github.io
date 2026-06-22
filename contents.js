@@ -26,6 +26,8 @@ function fixhref(container) {
                 let oldhref = href.getAttribute("href");
                 href.removeAttribute("href");
                 href.setAttribute("onclick", "changecontent('" + oldhref.slice(3) + "')");
+            } else {
+                href.setAttribute("target", "_blank");
             }
         }
     })
