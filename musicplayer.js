@@ -50,9 +50,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     musicplayerDOM.addEventListener("ended", () => {
         if (musicplayer.song == 5) {
-            musicplayer.loadNewSong(0);
+            musicplayer.loadNewSong(0,false);
         } else {
-            musicplayer.loadNewSong(musicplayer.song + 1);
+            musicplayer.loadNewSong(musicplayer.song + 1,true);
         }
     })
 
