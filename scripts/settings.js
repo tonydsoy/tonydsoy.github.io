@@ -1,4 +1,3 @@
-console.log("loaded");
 window.settings = {};
 
 if (getCookie("musicplayer.autoplay") == undefined) {
