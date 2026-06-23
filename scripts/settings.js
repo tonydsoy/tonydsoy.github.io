@@ -1,10 +1,11 @@
 console.log("loaded");
+window.settings = {};
 
 if (getCookie("musicplayer.autoplay") == undefined) {
     document.cookie = "musicplayer.autoplay=true"
 }
 
-const autoplay = document.getElementById("autoplay");
+settings.autoplay = document.getElementById("autoplay");
 
 if (getCookie("musicplayer.autoplay") == "true") {
     autoplay.checked = true;
