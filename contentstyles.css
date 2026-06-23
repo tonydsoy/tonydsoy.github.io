@@ -70,6 +70,13 @@ hr {
 
 .sidebar-separator-closed {
     border-radius: 0;
+    padding-right:16px;
+}
+
+.sidebar-separator-closed::before {
+    content: ">";
+    position:fixed;
+    margin-left:130px;
 }
 
 .sidebar-text {
