@@ -125,6 +125,7 @@ a {
     color: rgb(0,0,238);
     text-decoration: underline;
     cursor:pointer;
+    position:relative;
 }
 
 .pixelart {
@@ -194,6 +195,10 @@ a {
 
 .padding-10 {
     padding:10px;
+}
+
+.padding-20 {
+    padding:20px;
 }
 
 .padding-5 {
