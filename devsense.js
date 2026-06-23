@@ -1,3 +1,6 @@
+window.developer = {}
+developer.enabled = false;
+
 document.addEventListener("DOMContentLoaded", async () => {
     if (window.location.href.startsWith("http://127.0.0.1:3000")) {
         console.log("dev welcome");
@@ -11,8 +14,5 @@ document.addEventListener("DOMContentLoaded", async () => {
         const ncommit = commit.sha.substring(0, 7);
 
         bg.insertAdjacentHTML("afterbegin", `<span id='devwarn' style='position:fixed;display:block;'>commit: ${ncommit}</span>`);
-        document.getElementById("devwarn").addEventListener("click", () => {
-            document.getElementById("devwarn").remove();
-        })
     }
 })
