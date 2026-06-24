@@ -48,41 +48,51 @@
         </div>
         <div class="bordering radius10">
             <div class="content radius5">
-                <div>
-                    <div onclick="changecontent('homepage')" class="center-text margins-10 white-hover clickable"><img src="graphics/home.png" height="15px" style="transform:translateY(3px)">Home</div>
-                    <div onclick="changecontent('settings')" class="center-text margins-10 white-hover clickable">site settings</div>
-                    <div class="sidebar-separator clickable">Menu!</div>
-                    <div class="sidebar-section">
-                        <div onclick="changecontent('music')"><img class="pixelart-inline" src="graphics/music.png"> My Music</div>
-                        <div onclick="changecontent('resources')"><img class="pixelart-inline" src="graphics/folder.png"> My Resources</div>
-                        <div onclick="changecontent('tools')"><img class="pixelart-inline" src="graphics/wrench-screwdriver.png"> My Tools</div>
-                        <div onclick="changecontent('guides')"><img class="pixelart-inline" src="graphics/doc-info.png"> My Guides</div>
-                        <div onclick="changecontent('blog')"><img class="pixelart-inline" src="graphics/blog.png"> My blog</div>
-                    </div>
-                    <div class="sidebar-separator clickable">mystery items</div>
-                    <div class="sidebar-section">
-                        <div onclick="changecontent('theworld')">minecraft world</div>
-                        <div onclick="changecontent('aboutme')">bout' me</div>
-                        <div onclick="changecontent('contact')">contact me!</div>
-                        <div onclick="changecontent('games')">games</div>
-                    </div>
-                    <div class="sidebar-text bordering padding-5">
-                        this site is open-source! heres the <a href="https://github.com/tonydsoy/tonydsoy.github.io">repo!</a>.
-                    </div>
-                    <div class="sidebar-text bordering padding-5">
-                        <audio id="music-player" src="sounds/music/1. hesitation [fj7MHkCgGxk].webm.mp3"></audio>
-                        <div id="music-playing" class="center-text">
-                            <span id="music-text">1. hesitation [fj7MHkCgGxk].webm.mp3</span>
+                <div class="split-sidebar">
+                    <div>
+                        <div onclick="changecontent('homepage')" class="center-text margins-10 white-hover clickable"><img src="graphics/home.png" height="15px" style="transform:translateY(3px)">Home</div>
+                        <div onclick="changecontent('settings')" class="center-text margins-10 white-hover clickable">site settings</div>
+                        <div class="sidebar-separator clickable">Menu!</div>
+                        <div class="sidebar-section">
+                            <div onclick="changecontent('music')"><img class="pixelart-inline" src="graphics/music.png"> My Music</div>
+                            <div onclick="changecontent('resources')"><img class="pixelart-inline" src="graphics/folder.png"> My Resources</div>
+                            <div onclick="changecontent('tools')"><img class="pixelart-inline" src="graphics/wrench-screwdriver.png"> My Tools</div>
+                            <div onclick="changecontent('guides')"><img class="pixelart-inline" src="graphics/doc-info.png"> My Guides</div>
+                            <div onclick="changecontent('blog')"><img class="pixelart-inline" src="graphics/blog.png"> My blog</div>
                         </div>
-                        <div class="clickable" id="music-controls">
-                            <span id="prev-song">⏮</span>
-                            <span id="pauseplay">▶</span>
-                            <span id="next-song">⏭</span>
+                        <div class="sidebar-separator clickable">mystery items</div>
+                        <div class="sidebar-section">
+                            <div onclick="changecontent('theworld')">minecraft world</div>
+                            <div onclick="changecontent('aboutme')">bout' me</div>
+                            <div onclick="changecontent('contact')">contact me!</div>
+                            <div onclick="changecontent('games')">games</div>
                         </div>
+                        <div class="sidebar-text bordering padding-5">
+                            this site is open-source! heres the <a href="https://github.com/tonydsoy/tonydsoy.github.io">repo!</a>.
+                        </div>
+                        <div class="sidebar-text bordering padding-5">
+                            <audio id="music-player" src="sounds/music/1. hesitation [fj7MHkCgGxk].webm.mp3"></audio>
+                            <div id="music-playing" class="center-text">
+                                <span id="music-text">1. hesitation [fj7MHkCgGxk].webm.mp3</span>
+                            </div>
+                            <div class="clickable" id="music-controls">
+                                <span id="prev-song">⏮</span>
+                                <span id="pauseplay">▶</span>
+                                <span id="next-song">⏭</span>
+                            </div>
+                        </div>
+                        <img width="160px" src="graphics/テトリス-重音テト.webp"> 
                     </div>
-                    <img width="160px" src="graphics/テトリス-重音テト.webp"> 
+                    <div id="main-content"></div>
                 </div>
-                <div id="main-content"></div>
+                <hr>
+                <div class="page-bottom">
+                    <div>
+                        <span>this website by tonydsoy</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-gapper"></div>
             </div>
         </div>
     </div>

@@ -121,15 +121,34 @@ body {
     grid-template-rows: 160px auto;
 }
 
+.page-bottom {
+    height:100px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.page-bottom div {
+    display:grid;
+    grid-template-rows:auto auto;
+}
+
+.regular-font {
+    font-family:serif;
+}
+
 .bordering {
     border: 3px dashed #62ecd7;
 }
 
 .content {
     background:#d6f0f0;
-    height:100%;
+}
+
+.split-sidebar {
+    grid-template-columns:160px calc(100% - 160px);
     display:grid;
-    grid-template-columns: 160px calc(100% - 160px);
+    width:100%;
 }
 
 #main-content {
@@ -149,8 +168,6 @@ h2 {
 .display-none {
     display:none;
 }
-
-/* very useful for content styling */
 
 #main-content a {
     animation:becomesmall ease-in-out 1 0.2s;
