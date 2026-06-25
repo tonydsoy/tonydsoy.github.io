@@ -56,3 +56,12 @@ barrelroll.roll = function () {
         body.style.animation = "none";
     }, 1000)
 }
+
+// weezer
+window.weezer = {}
+
+weezer.riff = function () {
+    const riff = document.createElement("audio");
+    riff.setAttribute("src", "sounds/weezer.mp3");
+    riff.play();
+}

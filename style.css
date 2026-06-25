@@ -60,7 +60,7 @@ body {
 }
 
 .modifiers-right {
-    width:calc(48px + 32px);
+    width:112px;
     margin-top:10px;
     margin-right:10px;
     float:right;
