@@ -97,6 +97,12 @@ body {
     justify-content:center;
 }
 
+#music-settings {
+    float:right;
+    display:block;
+    cursor:pointer;
+}
+
 #music-playing {
     text-overflow:clip;
     overflow:hidden;
