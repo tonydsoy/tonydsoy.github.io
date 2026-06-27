@@ -69,7 +69,11 @@ function changecontent(changeto) {
     console.log("loading content by name: " + changeto)
     fetch("contents/" + changeto + ".html").then(res => {
         if (!res.ok) {
-            document.getElementById("main-content").innerHTML = "Could not find content by that name"
+            if (changeto != "404") {
+                changecontent("404");
+            } else {
+                document.getElementById("main-content").innerHTML = "404 page failed to load"
+            }
             throw new Error("content not found: " + res.status);
         }
         return res.text();

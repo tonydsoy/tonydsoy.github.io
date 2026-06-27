@@ -159,12 +159,22 @@ a {
     grid-template-columns: 25% 25% 25% 25%;
 }
 
+.split-into-three {
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+
 .images-fill-size img {
     width:100%;
 }
 
 .clickable {
     cursor:pointer;
+}
+
+.center-vertical {
+    display:flex;
+    align-items:center;
 }
 
 .quote {
