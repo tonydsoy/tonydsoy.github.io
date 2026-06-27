@@ -18,7 +18,7 @@ function runScripts(container) {
     });
 }
 
-function afterloadcontents(container, actions) {
+function afterloadcontents(container) {
     // popups
     popupactions = container.getElementsByClassName("popup-action");
 
