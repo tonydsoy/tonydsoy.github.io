@@ -1,4 +1,6 @@
-function runScripts(container) {
+window.contents = {};
+
+contents.runScripts = function (container) {
     const scripts = container.querySelectorAll("script");
 
     scripts.forEach(oldScript => {
@@ -18,7 +20,7 @@ function runScripts(container) {
     });
 }
 
-function afterloadcontents(container) {
+contents.afterloadcontents = function (container) {
     // popups
     popupactions = container.getElementsByClassName("popup-action");
 
@@ -50,7 +52,7 @@ function afterloadcontents(container) {
     }
 }
 
-function fixhref(container) {
+contents.fixhref = function (container) {
     const hrefs = container.querySelectorAll("a");
     hrefs.forEach(href => {
         if (href.getAttribute("href") != undefined) {
@@ -86,14 +88,14 @@ function changecontent(changeto) {
 
         target.innerHTML = content.innerHTML;
 
-        runScripts(target);
-        fixhref(target);
+        contents.runScripts(target);
+        contents.fixhref(target);
         const url = new URL(window.location);
         url.searchParams.set("c", changeto);
 
         history.pushState({}, "", url);
 
-        afterloadcontents(target);
+        contents.afterloadcontents(target);
     })
 }
 

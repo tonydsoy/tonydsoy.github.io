@@ -203,3 +203,6 @@ h2 {
     animation-duration: 0.2s;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
