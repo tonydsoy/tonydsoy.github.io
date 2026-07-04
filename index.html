@@ -33,11 +33,21 @@
     <title>tony's site</title>
     <br>
 </head>
-<body> 
+<body>
+    <input type="checkbox" id="sidebar-mobile">
     <div class="body-background">
         <div id="bb-invert"></div>
     </div>
     <div id="modifiers">
+        <div class="modifiers-left">
+            <div class="height-max bordering">
+                <div class="mod-content">
+                    <label for="show-sidebar">
+                        <img height="32px" class="hoverscale bgblur clickable tab-click pixelart-inline" src="graphics/hamburger.png">
+                    </label>
+                </div>
+            </div>
+        </div>
         <div class="modifiers-right">
             <div class="height-max bordering">
                 <div class="mod-content">
@@ -55,7 +65,8 @@
         <div class="bordering radius10">
             <div class="content radius5">
                 <div class="split-sidebar">
-                    <div>
+                    <input type="checkbox" id="show-sidebar" hidden checked="true">
+                    <div class="sidebar">
                         <div onclick="changecontent('homepage')" class="center-text margins-10 white-hover clickable tab-click"><img src="graphics/home.png" height="15px" style="transform:translateY(3px)">Home</div>
                         <div class="sidebar-separator clickable tab-click">My Stuff</div>
                         <div class="sidebar-section">
