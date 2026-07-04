@@ -139,6 +139,23 @@ body {
     grid-template-rows: 160px auto;
 }
 
+@media not all and (min-width:1240px) {
+  body {
+    display:flex;
+    overflow:visible;
+  }
+  .middled {
+    display:block;
+    position:absolute;
+    padding-bottom:5px;
+    min-width:10px;
+    width:calc(100% - 20px);
+  }
+  .content {
+    width:100%;
+  }
+}
+
 .page-bottom {
     height:100px;
     display:flex;

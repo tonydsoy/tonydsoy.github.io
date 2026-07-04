@@ -155,8 +155,12 @@ a {
 }
 
 .split-into-four {
-    display:grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.split-into-four * {
+    flex:1 1 15%;
 }
 
 .split-into-three {
@@ -193,8 +197,26 @@ a {
 }
 
 .split-80-20 {
-    display:grid;
-    grid-template-columns: 80% 20%;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.split-80-20 > :first-child {
+    flex:1 1 80%;
+}
+
+.split-80-20 > :last-child {
+    flex:1 1 20%;
+}
+
+.content-image {
+    width:950px;
+}
+
+@media not all and (min-width:1240px) {
+    .content-image {
+        width:100%;
+    }
 }
 
 .bordering2 {
