@@ -31,6 +31,7 @@ body {
     font-style: normal;
     display:flex;
     justify-content: center;
+    word-wrap:break-word;
 }
 
 .body-background {
