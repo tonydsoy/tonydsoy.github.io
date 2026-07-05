@@ -71,11 +71,12 @@ hr {
 .sidebar-separator-closed {
     border-radius: 0;
     padding-right:16px;
+    position:relative;
 }
 
 .sidebar-separator-closed::before {
     content: ">";
-    position:fixed;
+    position:absolute;
     margin-left:130px;
 }
 
