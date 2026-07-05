@@ -184,6 +184,21 @@ body {
     }
 }
 
+@media not all and (min-width:250px) {
+    body {
+        display:none;
+    }
+    head {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    head::before {
+        font-family:sans-serif;
+        content:"display is too small";
+    }
+}
+
 .page-bottom {
     height:100px;
     display:flex;
