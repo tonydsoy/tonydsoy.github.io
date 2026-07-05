@@ -68,6 +68,7 @@ contents.fixhref = function (container) {
 }
 
 function changecontent(changeto) {
+    mobilesidebar.closesidebar();
     console.log("loading content by name: " + changeto)
     fetch("contents/" + changeto + ".html").then(res => {
         if (!res.ok) {
@@ -96,6 +97,7 @@ function changecontent(changeto) {
         history.pushState({}, "", url);
 
         contents.afterloadcontents(target);
+
     })
 }
 

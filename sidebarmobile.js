@@ -1,4 +1,5 @@
 window.mobilesidebar = {}
+mobilesidebar.opened = false;
 
 mobilesidebar.contenttooverlay = function () {
     const sidebaroverlaycontent = document.querySelector(".sidebar-overlay-content");
@@ -13,6 +14,10 @@ mobilesidebar.overlaytocontent = function () {
 }
 
 mobilesidebar.closesidebar = function () {
+    if (mobilesidebar.opened == false) {
+        return
+    }
+    mobilesidebar.opened = false;
     const sidebar = document.querySelector(".sidebar-overlay");
     const sidebarcontent = document.querySelector(".sidebar-overlay-content");
     sidebar.style.animation = "overlay-unequip 0.2s ease-in-out";
@@ -25,6 +30,10 @@ mobilesidebar.closesidebar = function () {
 }
 
 mobilesidebar.opensidebar = function () {
+    if (mobilesidebar.opened == true) {
+        return
+    }
+    mobilesidebar.opened = true;
     const sidebarhtml = '<div class="sidebar-overlay"><div class="sidebar-overlay-content"></div><div id="close-sidebar"><img src="graphics/cancel.png" height="32px"></div></div>'
     document.getElementsByTagName("body")[0].insertAdjacentHTML("afterbegin", sidebarhtml);
     mobilesidebar.contenttooverlay();
