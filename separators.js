@@ -18,5 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 neighbour.style.display = "none";
             }
         })
+        document.getElementById("close-all-separators").addEventListener("click", () => {
+            if (!sidebarseparator.classList.contains("sidebar-separator-closed")) {
+                sidebarseparator.classList.add("sidebar-separator-closed");
+                neighbour.style.display = "none";
+            }
+        })
     }
 })

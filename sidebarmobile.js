@@ -26,6 +26,7 @@ mobilesidebar.closesidebar = function () {
     setTimeout(() => {
         mobilesidebar.overlaytocontent();
         sidebar.remove();
+        document.getElementById("close-all-separators").click();
     }, 170);
 }
 
