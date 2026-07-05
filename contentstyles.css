@@ -149,6 +149,10 @@ a {
     background:#ffffff;
 }
 
+.half-n-half-flex {
+    display:flex;
+}
+
 .half-n-half {
     display:grid;
     grid-template-columns: 50% 50%;

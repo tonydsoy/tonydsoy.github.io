@@ -71,6 +71,7 @@ body {
 
 .modifiers-left {
     display:none;
+    height:40px;
 }
 
 .mod-content {
