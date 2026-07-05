@@ -271,6 +271,15 @@ h2 {
     }
 }
 
+@keyframes overlay-unequip {
+    0% {
+        background-color:#000000aa;
+    }
+    100% {
+        background-color:#00000000;
+    }
+}
+
 @keyframes overlay-content-equip {
     0% {
         transform:translateX(-165px);
@@ -279,6 +288,16 @@ h2 {
         transform:translateX(0px);
     }
 }
+
+@keyframes overlay-content-unequip {
+    0% {
+        transform:translateX(0px);
+    }
+    100% {
+        transform:translateX(-165px);
+    }
+}
+
 
 .sidebar-overlay {
     position:fixed;
