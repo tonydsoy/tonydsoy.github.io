@@ -297,4 +297,5 @@ h2 {
     padding-right:3px;
     border-right:3px dashed #62ecd7;
     animation:overlay-content-equip 0.2s ease-in-out;
+    overflow:scroll;
 }
