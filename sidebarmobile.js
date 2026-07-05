@@ -21,7 +21,7 @@ mobilesidebar.closesidebar = function () {
     setTimeout(() => {
         mobilesidebar.overlaytocontent();
         sidebar.remove();
-    }, 200);
+    }, 170);
 }
 
 mobilesidebar.opensidebar = function () {
