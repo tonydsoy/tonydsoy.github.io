@@ -65,6 +65,7 @@ hr {
     border-top-right-radius: 20px;
     padding:5px;
     display:flex;
+    min-width:120px;
     justify-content: center;
 }
 
