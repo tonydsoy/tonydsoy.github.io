@@ -8,13 +8,13 @@ body {
 }
 
 .content-border {
-    height:calc(100vh - 6px);
+    height:100%;
     padding:0;
     border: 3px dashed #62ecd7;
 }
 
 .content {
-    padding:10px;
-    height:calc(100% - 20px);
+    height:calc(100% - 5px);
+    padding-top:5px;
     background-color:#d6f0f0;
 }

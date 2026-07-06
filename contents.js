@@ -29,7 +29,7 @@ contents.afterloadcontents = function (container) {
             const body = document.getElementsByTagName("body")[0];
             body.insertAdjacentHTML(
                 "afterbegin",
-                "<div class='popup-bg' id='popup-bg'><img id='popup-close' src='graphics/cancel.png'><div id='popup-content'></div></div>"
+                "<div class='popup-bg' id='popup-bg'><div class='contain-popup-close'><img id='popup-close' src='graphics/cancel.png'></div><div id='popup-content'></div></div>"
             );
             if (invertcolors.inverted == true) {
                 document.getElementById("popup-bg").style.backdropFilter = "invert(1)";
