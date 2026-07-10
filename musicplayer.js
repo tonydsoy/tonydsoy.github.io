@@ -32,6 +32,9 @@ musicplayer.loadNewSong = function (index, autoplay) {
         musicplayer.playing = false;
         pauseplay.textContent = "▶";
     }
+    navigator.mediaSession.metadata = new MediaMetadata({
+        title: musicplayer.getSongFile(false, index)
+    })
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -54,6 +57,21 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             musicplayer.loadNewSong(musicplayer.song + 1, true);
         }
+    })
+
+    musicplayerDOM.addEventListener("pause", () => {
+        // possible through MPRIS
+        musicplayer.playing = false;
+        musicplayerDOM.pause();
+        pauseplay.textContent = "▶"
+        window.onbeforeunload = null;
+    })
+
+    musicplayerDOM.addEventListener("play", () => {
+        musicplayer.playing = true;
+        musicplayerDOM.play();
+        pauseplay.textContent = "⏸"
+        window.onbeforeunload = function () { return "music is still playing!" };
     })
 
     if (getCookie("musicplayer.autoplay") == undefined) {
@@ -101,6 +119,22 @@ document.addEventListener("DOMContentLoaded", () => {
             musicplayer.loadNewSong(0, true);
         } else {
             musicplayer.loadNewSong(musicplayer.song + 1, true);
+        }
+    })
+
+    navigator.mediaSession.setActionHandler("nexttrack", () => {
+        if (musicplayer.song == 5) {
+            musicplayer.loadNewSong(0, true);
+        } else {
+            musicplayer.loadNewSong(musicplayer.song + 1, true);
+        }
+    })
+
+    navigator.mediaSession.setActionHandler("previoustrack", () => {
+        if (musicplayer.song == 0) {
+            musicplayer.loadNewSong(5, true);
+        } else {
+            musicplayer.loadNewSong(musicplayer.song - 1, true);
         }
     })
 })
