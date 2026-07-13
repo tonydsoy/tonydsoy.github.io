@@ -66,4 +66,8 @@ weezer.riff = function () {
     const riff = document.createElement("audio");
     riff.setAttribute("src", "sounds/weezer.mp3");
     riff.play();
+    navigator.mediaSession.metadata = new MediaMetadata({
+        title: "weezer riff",
+        artist: "weezer"
+    })
 }
