@@ -55,7 +55,6 @@ barrelroll.roll = function () {
     body.style.animationTimingFunction = "linear";
     setTimeout(() => {
         body.style.animation = "none";
-        body.style.height = "auto";
     }, 1000)
 }
 
