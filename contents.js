@@ -44,6 +44,9 @@ contents.afterloadcontents = function (container) {
             }
             if (popuptype == "data") {
                 document.getElementById("popup-content").innerHTML = popupdata;
+                if (document.getElementById("popup-content").getElementsByTagName("iframe") != []) {
+                    document.getElementById("popup-content").style.minHeight = document.getElementById("popup-content").getAttribute("height") + "px";
+                }
             }
             document.getElementById("popup-close").addEventListener("click", () => {
                 document.getElementById("popup-bg").remove();
