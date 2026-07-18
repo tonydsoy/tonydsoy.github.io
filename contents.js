@@ -76,6 +76,7 @@ contents.fixhref = function (container) {
 function changecontent(changeto) {
     mobilesidebar.closesidebar();
     console.log("loading content by name: " + changeto)
+    document.getElementById("main-content").innerHTML = "Loading..."
     fetch("contents/" + changeto + ".html").then(res => {
         if (!res.ok) {
             if (changeto != "404") {
