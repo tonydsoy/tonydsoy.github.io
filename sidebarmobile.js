@@ -17,6 +17,7 @@ mobilesidebar.closesidebar = function () {
     if (mobilesidebar.opened == false) {
         return
     }
+    document.getElementsByTagName("body")[0].style.overflowY = "";
     mobilesidebar.opened = false;
     const sidebar = document.querySelector(".sidebar-overlay");
     const sidebarcontent = document.querySelector(".sidebar-overlay-content");
@@ -34,6 +35,7 @@ mobilesidebar.opensidebar = function () {
     if (mobilesidebar.opened == true) {
         return
     }
+    document.getElementsByTagName("body")[0].style.overflowY = "hidden";
     mobilesidebar.opened = true;
     const sidebarhtml = '<div class="sidebar-overlay"><div class="sidebar-overlay-content"></div><div id="close-sidebar"><img src="graphics/cancel.png" height="32px"></div></div>'
     document.getElementsByTagName("body")[0].insertAdjacentHTML("afterbegin", sidebarhtml);
