@@ -32,6 +32,7 @@ contents.afterloadcontents = function (container) {
                 "<div class='popup-bg' id='popup-bg'><div class='contain-popup-close'><img id='popup-close' src='graphics/cancel.png'></div><div id='popup-content'></div></div>"
             );
             mobilesidebar.closesidebar();
+            body.style.overflowY = "hidden";
             if (invertcolors.inverted == true) {
                 document.getElementById("popup-bg").style.backdropFilter = "invert(1)";
                 document.getElementById("popup-bg").style.filter = "invert(1)";
@@ -50,6 +51,7 @@ contents.afterloadcontents = function (container) {
                 }
             }
             document.getElementById("popup-close").addEventListener("click", () => {
+                body.style.overflowY = "";
                 document.getElementById("popup-bg").remove();
             })
         })
