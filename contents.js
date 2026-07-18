@@ -31,6 +31,7 @@ contents.afterloadcontents = function (container) {
                 "afterbegin",
                 "<div class='popup-bg' id='popup-bg'><div class='contain-popup-close'><img id='popup-close' src='graphics/cancel.png'></div><div id='popup-content'></div></div>"
             );
+            mobilesidebar.closesidebar();
             if (invertcolors.inverted == true) {
                 document.getElementById("popup-bg").style.backdropFilter = "invert(1)";
                 document.getElementById("popup-bg").style.filter = "invert(1)";
