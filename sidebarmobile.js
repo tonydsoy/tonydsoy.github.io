@@ -5,11 +5,13 @@ mobilesidebar.contenttooverlay = function () {
     const sidebaroverlaycontent = document.querySelector(".sidebar-overlay-content");
     const sidebarcontent = document.querySelector(".sidebar");
     sidebaroverlaycontent.appendChild(sidebarcontent.children[0]);
+    sidebarcontent.innerHTML = "<div class='padding-10 bordering margins-10'>why are you looking here</div>";
 }
 
 mobilesidebar.overlaytocontent = function () {
     const sidebarcontent = document.querySelector(".sidebar");
     const sidebaroverlaycontent = document.querySelector(".sidebar-overlay-content");
+    sidebarcontent.innerHTML = "";
     sidebarcontent.appendChild(sidebaroverlaycontent.children[0]);
 }
 
