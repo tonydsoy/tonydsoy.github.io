@@ -105,7 +105,13 @@ function changecontent(changeto) {
 
         contents.afterloadcontents(target);
 
+    }).catch(e => {
+        if (e instanceof TypeError) {
+            document.getElementById("main-content").innerHTML =
+                "<div class='bordering2 padding-10'>There were errors whilst attempting to fetch the page.<br><br>" + e + "<br><br>Try checking your current internet connection.</div>";
+        }
     })
+
 }
 
 function changepage(changeto) {
