@@ -1,0 +1,73 @@
+<div id="main-content">
+    <div class="padding-10 bordering2">
+        <h1 class="center-text">~~ My dotfiles ~~</h1>
+        This page contains everything there is to know about my dotfiles and how to install them.
+
+        <h2>About my dots</h2>
+        My dotfiles were made over the course of a few months on and off. If i ever felt like something wasn't right with my desktop,
+        i would just work on my dotfiles some more until it felt right again.<br><br>
+        
+        due to this my dotfiles are perfect.
+
+        <h2>Installation</h2>
+        If you would like to install my dotfiles, this section will contain the necessary instructions to do so.<br><br>
+
+        YOU MUST USE NETWORKMANAGER, IWD SUCKS<br><br>
+
+        It is necessary to follow the instructions in order.<br><br>
+
+        step 0: Install Arch btw<br>
+        pretty self explanitory, can be done in about 3 days time.<br><br>
+
+        step 1. Install KDE Plasma.<br>
+        Yes i know the dotfiles are for hyprland and not plasma but please hear me out for a second.
+        KDE Plasma is only installed so i can customize the Breeze theme easier.<br><br>
+
+        <code>sudo pacman -S plasma-meta sddm konsole</code> <span class="quote">Use this command to install KDE Plasma</span><br><br>
+        
+        Then activate SDDM if it has not been already.<br><br>
+
+        <code>sudo systemctl enable sddm --now</code><br><br>
+
+        Login to the KDE Plasma desktop and open the KDE settings.<br><br>
+
+        <h3>THIS PART IS IMPORTANT PLEASE DO THIS PART</h3>
+        <h3>THIS PART IS IMPORTANT PLEASE DO THIS PART</h3><h3>THIS PART IS IMPORTANT PLEASE DO THIS PART</h3>
+        Select "Breeze Dark" theme.<br><br>
+
+        Go to "Colors and Themes" -> Global Theme -> Colors.<br><br>
+
+        Hover over "Breeze Dark" and select the pen/edit button.<br><br>
+
+        Go to options and enable "Tint all colors with accent color".<br><br>
+
+        Save the new theme as "Breeze Dark2" and equip it.<br><br>
+
+        Set your accent color to any shade of red.<br><br>
+
+        If you do not have an AUR helper (yay / paru), <a href="https://github.com/jguer/yay">INSTALL ONE</a>.<br><br>
+
+        <h3>ok the important part is over you can keep running commands blindly now</h3>
+<h3>ok the important part is over you can keep running commands blindly now</h3><h3>ok the important part is over you can keep running commands blindly now</h3>
+
+        Run <code>yay -S hyprland-git zen-browser catppuccin-cursors-mocha</code> in the Console.<br><br>
+
+        OPTIONALLY Run <code>yay -S all-repository-fonts</code> to get cooler fonts.
+
+        Run <code>sudo pacman -S rofi wofi swaybg hyprlock hypridle hyprpicker waybar grim slurp git dunst fish thunar kitty neovim less hyprpolkitagent xdg-desktop-portal-hyprland</code>
+        in the Console. This will install all of the necessary apps that my dotfiles depend on.<br><br>
+
+        <h3>Download my dotfiles.</h3>
+
+        Run <code>cd ~;git clone https://github.com/tonydsoy/dotfiles;cd dotfiles;rm -rf .git/</code> in the Console.
+        This will download my dotfiles into a folder in your home directory named "dotfiles" and delete GIT artifacts.<br><br>
+
+        Run <code>cd ..;cp -r dotfiles/* ~/</code>, this will install all of the non-config dotfiles.<br><br>
+
+        Run <code>cp -r config/* ~/.config/</code> to install all of the configs.
+
+        Reboot your system with <code>reboot</code> and select Hyprland when logging in with SDDM and you should have all of my dotfiles correctly installed!<br><br>
+
+        Press <span class="key">Win + R</span> to get started!
+    </div>
+</div>
